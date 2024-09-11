@@ -1,0 +1,21 @@
+.grid {
+    display: grid;
+    gap: var(--gap-macro);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.gridItem {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid  gray; */
+    min-height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gridItem img {
+    max-width: 100%;
+    display: flex;
+}
+
