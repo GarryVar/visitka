@@ -33,16 +33,18 @@ export default class Navigation extends Component {
             <div className={this.props.menuVisible ? style.nav : style.navHidden}>
                 <ul className={style.menu}>
                     {
-                    menuItemsData.map(({textContent, link}, indx) =>
-                        <li className={style.item} key={indx}>
-                            <NavLink
-                                className={({isActive}) => style.link + ' animated__animate animate__bounce ' +( isActive ? ` active`: '')} to={link}>
-                                {textContent}
-                            </NavLink>
-                        </li>
-                    )}
+                        menuItemsData.map(({textContent, link}, indx) =>
+                            <li className={style.item} key={indx}>
+                                <NavLink 
+                                    to={link} 
+                                    className={({isActive}) => `${style.link} ${( isActive ? ' active' : '')}`}>
+                                    {textContent}
+                                </NavLink>
+                            </li>
+                        )
+                    }
                 </ul>
-        </div>
+            </div>
         )
     }
 }
