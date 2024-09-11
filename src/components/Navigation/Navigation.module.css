@@ -17,7 +17,6 @@
 
 .item {
     display: flex;
-    border-radius: 20px;
     margin-bottom: 5px;
 }
 
@@ -27,15 +26,26 @@
 
 .item:hover a,
 .item:focus a {
-    background-color: #fff;
+    background-color: var(--prymari);
+    color: white;
 }
 
 .link {
-    padding: 10px;
+    position: relative;
+    justify-content: center;
+    padding: calc(var(--gap-macro) / 2);
     width: 100%;
     display: flex;
-    color: rgb(111, 111, 111);
+    color: var(--main-title);
+    font-size: 18px;
+    letter-spacing: -1px;
+    letter-spacing: 1px;
 }
+
+.link:hover {
+    color: var(--main-title);
+}
+
 
 /*@media (min-width: 620px) {*/
 
@@ -50,11 +60,16 @@
     .navHidden {
         display: block;
     }
+
 }
 
 @media (min-width: 920px) {
     .nav {
         grid-column: 1 / -1;
         grid-row: 2;
+    }
+
+    .menu {
+        border-top: 1px solid var( --main-light-border);
     }
 }
