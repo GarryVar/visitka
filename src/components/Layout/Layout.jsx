@@ -24,7 +24,7 @@ export default class Layout extends Component {
 
     onShowNavMenu (e) {
         let btn = e.currentTarget;
-
+        
         if (btn.localName === 'button') {
             this.setState((state) => ({menuVisible: !state.menuVisible}))
         }
