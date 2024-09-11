@@ -17,6 +17,7 @@
 
 .item {
     display: flex;
+    align-items: center;
     margin-bottom: 5px;
 }
 
@@ -32,14 +33,22 @@
 
 .link {
     position: relative;
-    justify-content: center;
-    padding: calc(var(--gap-macro) / 2);
-    width: 100%;
+
     display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: calc(var(--gap-macro) / 2);
+
     color: var(--main-title);
     font-size: 18px;
     letter-spacing: -1px;
     letter-spacing: 1px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    background-color: var(--prymari);
 }
 
 .link:hover {
@@ -71,5 +80,9 @@
 
     .menu {
         border-top: 1px solid var( --main-light-border);
+    }
+
+    .link {
+        justify-content: start;
     }
 }

@@ -113,6 +113,7 @@ p {
 
 .title h1 {
   margin: 10px;
+  color: var(--prymari);
 }
 
 .subtitle {

@@ -17,7 +17,7 @@
     grid-area: header;
     border-bottom: 1px solid var(--main-light-border);
     background-color: var(--main-light);
-    z-index: 100;
+    z-index: 120;
 }
 
 .headerLayout {
