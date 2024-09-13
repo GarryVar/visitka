@@ -15,8 +15,7 @@ export default class Layout extends Component {
         super(props);
 
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
-        this.getPictureDetail = this.getPictureDetail.bind(this);
-
+        this.getDetail = this.getDetail.bind(this);
         this.state = {
             menuVisible: false,
             showBicPic: false,
@@ -26,14 +25,13 @@ export default class Layout extends Component {
 
     onShowNavMenu (e) {
         let btn = e.currentTarget;
-        
         if (btn.localName === 'button') {
             this.setState((state) => ({menuVisible: !state.menuVisible}))
         }
     }
-
-    getPictureDetail (key) {
-        key = +key;
+    getDetail (key) {
+        // let str = key.replace(/[^\d]/g, '');
+        key = +key
         return this.state.picturesData.find(i => i.key === key);
     }
 
@@ -53,30 +51,39 @@ export default class Layout extends Component {
                     <main className={style.main}>
                         
                         <Routes>
-                            <Route path="/" element={<Home />}></Route>
-                            <Route path="/dev" element={<Development />}></Route>
-                            <Route path="/music" element={<Music />}></Route>
+                            <Route
+                                path="/"
+                                element={<Home />}>
+                            </Route>
+
+                            <Route
+                                path="/dev"
+                                element={<Development />}>
+                            </Route>
+
+                            <Route
+                                path="/music"
+                                element={<Music />}>
+                            </Route>
+
                             <Route 
                                 path="/graphics" 
-                                element={<Graphics
+                                element={
+                                        <Graphics
                                             state={this.state} 
-                                            data={pictures} />}>
+                                            data={pictures} />
+                                        }>
+                            </Route>
 
+                            <Route
+                                path='/:key'
+                                element={
+                                    <PictureDetail
+                                        state={this.state}
+                                        getDetail={this.getDetail} />
+                                }>
                             </Route>
                         </Routes>
-
-                        <Routes>
-                            <Route 
-                                path='/pictureDetail'
-                                element={<PictureDetail
-                                            state={this.state}
-                                            data={pictures}
-                                            getDetail={this.getDetail} />
-                                        }>
-                                
-                            </Route>
-                        </Routes> 
-                        
 
                     </main>
 {/* 

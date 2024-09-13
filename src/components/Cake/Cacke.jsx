@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-export default class Cacke extends Component {
+export default class Cake extends Component {
     render () {
         return (
             <div className="content">
