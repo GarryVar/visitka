@@ -1,13 +1,13 @@
 import {Component} from 'react';
 import style from './Layout.module.css';
-import picture from '../../img/ava.jpg';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Development from './../Development/Development';
 import Home from '../Home/Home';
 import Music from '../Music/Music'    
 import Graphics from '../Graphics/Graphics';
-import Navigation from '../Navigation/Navigation';
-
+import Header from './../Header/Header';
+import { pictures } from '../../data/pictures';
+import PictureDetail from '../PictureDetail/PictureDetail';    
 
 
 export default class Layout extends Component {
@@ -15,11 +15,13 @@ export default class Layout extends Component {
         super(props);
 
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
+        this.getPictureDetail = this.getPictureDetail.bind(this);
 
         this.state = {
-            menuVisible: false
+            menuVisible: false,
+            showBicPic: false,
+            picturesData: pictures
         }
-
     }
 
     onShowNavMenu (e) {
@@ -30,39 +32,59 @@ export default class Layout extends Component {
         }
     }
 
+    getPictureDetail (key) {
+        key = +key;
+        return this.state.picturesData.find(i => i.key === key);
+    }
+
     render() {
         return (
+            
             <HashRouter>
+                
                 <div className={style.layout}>
+                
 
-                    <header className={style.header}>
-                        <div className={style.headerLayout}>
-                            <div className={style.headerTopBar}>
-                                <img src={picture} alt=""  width="128" height="128"/>
-                            </div>
-
-                            <Navigation  menuVisible={this.state.menuVisible} />
-                            <button className={style.headerBnBurger} type="button" onClick={this.onShowNavMenu}>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-                        </div>
-                    </header>
+                    <Header
+                        menuVisible={this.state.menuVisible}
+                        onShowNavMenu={this.onShowNavMenu}
+                    />
 
                     <main className={style.main}>
+                        
                         <Routes>
                             <Route path="/" element={<Home />}></Route>
                             <Route path="/dev" element={<Development />}></Route>
                             <Route path="/music" element={<Music />}></Route>
-                            <Route path="/graphics" element={<Graphics />}></Route>
+                            <Route 
+                                path="/graphics" 
+                                element={<Graphics
+                                            state={this.state} 
+                                            data={pictures} />}>
 
+                            </Route>
                         </Routes>
-                    </main>
 
+                        <Routes>
+                            <Route 
+                                path='/pictureDetail'
+                                element={<PictureDetail
+                                            state={this.state}
+                                            data={pictures}
+                                            getDetail={this.getDetail} />
+                                        }>
+                                
+                            </Route>
+                        </Routes> 
+                        
+
+                    </main>
+{/* 
                     <footer className={style.footer}>
-                        <div className={style.inner}></div>
-                    </footer>
+                        <div className={style.inner}>
+                            <p className="version">v:2.0.1</p>
+                        </div>
+                    </footer> */}
                 </div>
             </HashRouter>
         )

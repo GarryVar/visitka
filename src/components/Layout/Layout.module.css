@@ -1,67 +1,22 @@
 .layout {
     display: grid;
-    gap: var(--gap-macro);
 
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 128px;
+    grid-template-rows: auto 1fr;
     grid-template-areas: 
         'header'
         'main'
         'footer';
+        /* 'footer'; */
     height: inherit;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    grid-area: header;
-    border-bottom: 1px solid var(--main-light-border);
-    background-color: var(--main-light);
-    z-index: 120;
-}
-
-.headerLayout {
-    display: grid;
-    gap: var(--gap-macro);
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--gap-macro);
-}
-
-.headerTopBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.headerTopBar img {
-    border-radius: 50%;
-}
-
-.headerBnBurger {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0;
-    padding: 0;
-
-    width: 25px;
-    height: 25px;
-
-    background-color: var(--main-light);
-    border: none;
-}
-
-.headerBnBurger span {
-    height: 4px;
-    width: 25px;
-    background-color: var(--main-title);
+.inner {
+    position: relative;
+    height: 240px;
 }
 
 .main {
-    padding: 30px;
     padding-top: 0;
     grid-area: main;
     min-height: 320px;
@@ -70,44 +25,19 @@
 }
 
 .footer {
+    border-top: 4px double  white;
     grid-area: footer;
     z-index: 100;
-    background-color: #fff;
+    background-color: var(--prymari);
 }
-
-
-@media (min-width: 620px) {
-
-    .headerLayout {
-        grid-template-columns: auto 1fr;
-    }
-
-    .headerBnBurger {
-        display: none;
-    }
-}
-
 
 @media(min-width: 920px) {
     .layout {
-        grid-template-columns: 240px 1fr;
+        grid-template-columns: 340px 1fr;
         grid-template-rows: 1fr 128px;
 
         grid-template-areas: 'header main'
                             'header footer';
-    }
-
-    .header {
-        border-bottom: none;
-    }
-
-    .headerLayout {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-        border-right: 1px solid var(--main-light-border);
-        border-bottom: none;
-        align-items: start;
-        height: 100%;
     }
 
     .footer {
