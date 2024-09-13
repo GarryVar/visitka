@@ -25,5 +25,4 @@ const PictureDetail = (props) => {
         </div>
       )
   }
-
   export default  PictureDetail;

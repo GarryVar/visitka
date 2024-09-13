@@ -16,7 +16,6 @@ export default class Header extends Component {
               menuVisible={this.props.menuVisible} />
 
           <button
-          
             onClick={this.props.onShowNavMenu}
             className={style.headerBnBurger}
 
