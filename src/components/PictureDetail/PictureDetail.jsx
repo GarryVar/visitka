@@ -1,25 +1,40 @@
 import React from "react";
+import {useParams} from "react-router-dom";
 
 const PictureDetail = (props) => {
-  console.log(props);
+    const {key} = useParams();
+    const getData = props.getDetail(key);
+    const {
+        image,
+        width,
+        height,
+        title,
+        subtitle,
+        desc,
+    } = getData;
   return (
         <div className="content">
           <div className="title">
-             <h1 className="animate__animated animate__lightSpeedInRight">DETAIL</h1>
+             <h1 className="animate__animated animate__lightSpeedInRight">{title}</h1>
           </div>
+            <div className="subtitle">{subtitle}</div>
+
 
             <div className="page">
                 {
-                  props.data.map((i) => {
-                    return (
-                      <div className="container">
-                        <div className="image">
-                          <img src={i.image} alt="" width="240" height="240"/>
-                        </div>
-                        <p className="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, enim?</p>
-                      </div>
-                    )
-                  })
+                  <div className="container">
+                    <div className="image">
+
+                      <img
+                          src={image}
+                          alt={title}
+                          width={width}
+                          height={height}
+                      />
+
+                    </div>
+                    <p className="desc">{desc}</p>
+                  </div>
                 }
             </div>
         </div>

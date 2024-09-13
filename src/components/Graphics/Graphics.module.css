@@ -58,9 +58,13 @@
   }
 
   @media (min-width: 620px) {
-    .wrappe {
+    .wrapper {
         width: 70%;
     }
+
+      .gridItem {
+          font-size: 16px;
+      }
   }
 
 
