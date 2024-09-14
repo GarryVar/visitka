@@ -38,7 +38,7 @@ export default class Navigation extends Component {
                                     to={link} 
                                     className={({isActive}) => `${style.link} ${( isActive ? ' active' : '')}`}>
                                     
-                                    {textContent}
+                                    {textContent} 
                                 </NavLink>
                             </li>
                         )

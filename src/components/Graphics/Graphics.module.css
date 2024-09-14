@@ -1,14 +1,16 @@
-.grid {
+.list {
     display: grid;
     border: 2px solid black;
 }
 
-.gridItem {
+.link {
     display: grid;
     font-size: 10px;
     color: black;
     outline: none;
     padding: 5px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
 }
 
 .wrapper {
@@ -19,21 +21,15 @@
     box-shadow: 15px 13px black;
 }
 
-.gridItem:hover,
-.gridItem:focus {
+.link:hover,
+.link:focus {
     background-color:  #0aa;
 }
 
-.gridItem img {
+.link img {
     max-width: 100%;
     display: flex;
 }
-
-.gridItem figcaption {
-    font-size: 5px;
-    line-height: 12px;
-}
-
 
 .typing-demo {
     width: 22ch;

@@ -1,0 +1,29 @@
+.page {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+.desc {
+  padding: 5px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+@media(min-width: 620px) {
+
+  .page {
+    margin-top: 30px;
+  }
+
+  .container {
+    grid-template-columns: min-content auto;
+  }
+}

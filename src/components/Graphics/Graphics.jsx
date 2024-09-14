@@ -10,17 +10,19 @@ import {Link} from "react-router-dom";
                 </div>
                 <p className="subtitle">Мои идеи реализованые в работах с 2d графикой и дизайном</p>
                 <div className={style.wrapper}>
-                    <div className={style.grid}>
+                    <ul className={style.list}>
                         {
-                            props.data.map((i) =>
-                                <Link
-                                    key={i.key}
-                                    to={`/${i.key}`}
-                                    className={`${style.gridItem} animate__animated animate__fadeInUp`}>
-                                    {i.title}
-                                </Link>)
+                            props.data.map(({title, key}) =>
+                                <li>
+                                    <Link
+                                        key={key}
+                                        to={`/${key}`}
+                                        className={`${style.link} animate__animated animate__fadeInUp`}>
+                                        {title}
+                                    </Link>
+                                </li>)
                         }
-                    </div>
+                    </ul>
                 </div>
             </div>
         )

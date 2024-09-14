@@ -1,6 +1,5 @@
 import { Component } from "react";
 import style from './Header.module.css';
-// import picture from '../../img/ava.jpg';
 import Navigation from '../Navigation/Navigation';
 
 export default class Header extends Component {

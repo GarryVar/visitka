@@ -1,13 +1,12 @@
 
 @font-face {
   font-family: 'Press Start 2P';
-  src: url('PressStart2P-Regular.woff2') format('woff2'),
-      url('PressStart2P-Regular.woff') format('woff');
+  src: url('../public/fonts/PressStart2P-Regular.woff2') format('woff2'),
+      url('../public/fonts/PressStart2P-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
 
 :root {
   --prymari: #000084;
@@ -60,8 +59,15 @@ a {
   
   text-decoration: none;
 }
+
 p {
   margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 figure {
@@ -84,18 +90,6 @@ figure {
 .active {
   position: relative;
 }
-/* 
-  .active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateX(-50%);
-    height: 10px;
-    width: 10px;
-
-    background-color: var(--prymari);
-}   */
 
 .title,
 .subtitle {
@@ -118,34 +112,11 @@ figure {
   font-size: 12px;
 }
 
-/* .title h1 {
-  margin: 10px;
-} */
-
 .subtitle {
   display: flex;
   align-items: center;
   padding: 10px;
   font-size: 12px;
-}
-
-.page {
-  background-color: gray;
-  width: 90%;
-  margin: auto;
-  margin-top: 20px;
-  padding: 20px;
-}
-
-.container {
-  display: grid;
-  gap: 20px;
-}
-
-.desc {
-  padding: 5px;
-  font-size: 12px;
-  letter-spacing: 2px;
 }
 
 .version {
@@ -162,11 +133,6 @@ code {
 }
 
 @media(min-width: 620px) {
-
-  .page {
-    margin-top: 30px;
-  }
-
   .container {
     grid-template-columns: min-content auto;
   }

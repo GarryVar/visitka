@@ -6,20 +6,20 @@ import Home from '../Home/Home';
 import Music from '../Music/Music'    
 import Graphics from '../Graphics/Graphics';
 import Header from './../Header/Header';
-import { pictures } from '../../data/pictures';
 import PictureDetail from '../PictureDetail/PictureDetail';    
 
 
 export default class Layout extends Component {
     constructor(props) {
         super(props);
+  
 
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
         this.getDetail = this.getDetail.bind(this);
+
         this.state = {
             menuVisible: false,
             showBicPic: false,
-            picturesData: pictures
         }
     }
 
@@ -29,10 +29,9 @@ export default class Layout extends Component {
             this.setState((state) => ({menuVisible: !state.menuVisible}))
         }
     }
+
     getDetail (key) {
-        // let str = key.replace(/[^\d]/g, '');
-        key = +key
-        return this.state.picturesData.find(i => i.key === key);
+        return this.props.pictures.find(i => i.key === key);
     }
 
     render() {
@@ -69,20 +68,18 @@ export default class Layout extends Component {
                             <Route 
                                 path="/graphics" 
                                 element={
-                                        <Graphics
-                                            state={this.state} 
-                                            data={pictures} />
+                                        <Graphics 
+                                            data={ this.props.pictures} />
                                         }>
+         
                             </Route>
-
                             <Route
                                 path='/:key'
                                 element={
                                     <PictureDetail
-                                        state={this.state}
                                         getDetail={this.getDetail} />
                                 }>
-                            </Route>
+                        </Route>
                         </Routes>
 
                     </main>
