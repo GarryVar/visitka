@@ -1,6 +1,6 @@
 # Visitka 
 
-Этот пооект пишется [Create React App](https://github.com/facebook/create-react-app).
+Этот проект пишется [Create React App](https://github.com/facebook/create-react-app).
 
 ## Что это
 Это сайт визитка обо мне, где можно ознакомится с моими навыками веб - разработки, увлечениями, интересами. Здесь я попытался собрать в еднном месте всё то чем я увлекаюсь. 
