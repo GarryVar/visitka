@@ -5,7 +5,7 @@ export default class Home extends Component {
         return (
             <div className="content">
                 <div className="title">
-                    <h1 className="animate__animated animate__lightSpeedInRight">Главная</h1>
+                    <h1 className="animate__animated animate__flipInX">Главная</h1>
                 </div>
                 <p className="subtitle">Привет! меня зовут Игорь я изучаю фронтенд, <br /> пишу музыку и увлекаюсь графикой.</p>
             </div>    
