@@ -1,7 +1,19 @@
+import  hockey  from "../images/hockey_club.webp";
+import  thumbHockey  from "../images/thumb-hockey_club.webp";
+import  cake  from "../images/pie_cosmo_cake.webp";
+import  thumbCake  from "../images/thumb-pie_cosmo_cake.webp";
+import wash from "../images/wash_your_car.webp";
+import thumbWash from "../images/thumb-wash_your_car.webp";
+import redEyes from "../images/red_eyes_totem.webp";
+import thumbRedEyes from "../images/thumb-red_eyes_totem.webp";
+import tomahawk from "../images/tomahawk.webp";
+import thumbTomahawk from "../images/thumb-tomahawk.webp";
+
+
 export const pictures = [
     {
-      image: "../../images/hockey_club.webp",
-      thumb: "../../images/thumb-hockey_club.webp",
+      image: hockey,
+      thumb: thumbHockey,
       bigWidth: "800",
       bigHeight: "800",
       width: "280",
@@ -16,8 +28,8 @@ export const pictures = [
     },
 
     {
-      image: "../../images/pie_cosmo_cake.webp",
-      thumb: "../../images/thumb-pie_cosmo_cake.webp",
+      image: cake,
+      thumb: thumbCake,
       bigWidth: "800",
       bigHeight: "800",
       width: "280",
@@ -32,8 +44,8 @@ export const pictures = [
     },
 
     {
-      image: "../../images/wash_your_car.webp",
-      thumb: "../../images/thumb-wash_your_car.webp",
+      image: wash,
+      thumb: thumbWash,
       bigWidth: "800",
       bigHeight: "800",
       width: "280",
@@ -48,8 +60,8 @@ export const pictures = [
     },
 
     {
-      image: "../../images/red_eyes_totem.webp",
-      thumb: "../../images/thumb-red_eyes_totem.webp",
+      image: redEyes,
+      thumb: thumbRedEyes,
       bigWidth: "800",
       bigHeight: "800",
       width: "411",
@@ -64,8 +76,8 @@ export const pictures = [
     },
 
     {
-      image: "../../images/tomahawk.webp",
-      thumb: "../../images/thumb-tomahawk.webp",
+      image: tomahawk,
+      thumb: thumbTomahawk,
       bigWidth: "800",
       bigHeight: "800",
       width: "280",
