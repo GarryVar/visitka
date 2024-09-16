@@ -1,6 +1,3 @@
-import Keygen from "keygenerator/lib/keygen";
-
-
 export const pictures = [
     {
       image: "../../images/hockey_club.webp",
