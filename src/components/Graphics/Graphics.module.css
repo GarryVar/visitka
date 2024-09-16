@@ -26,7 +26,6 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
-    background-color: var(--hover);
 }
 
 .link img {
@@ -36,15 +35,10 @@
 
   @media (min-width: 620px) {
     .list {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
     }
   }
 
-@media (min-width: 920px) {
-    .wrapper {
-        min-width: 80%;
-    }
-}
 @media (min-width: 1200px) {
     .wrapper {
         margin: auto;
