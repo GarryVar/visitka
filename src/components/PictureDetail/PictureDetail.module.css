@@ -1,29 +1,58 @@
 .page {
-  background-color: white;
-  width: 90%;
-  margin: auto;
-  margin-top: 20px;
-  padding: 20px;
+  background-color: transparent;
+  /* margin-top: var(--gap); */
 }
 
 .container {
+  padding: 10px;
   display: grid;
-  gap: 20px;
+  justify-items: center;
+  gap: 10px;
+}
+
+.disclamer {
+  padding: 10px;
+  color: white;
+}
+
+.picture {
+  width: 280px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .desc {
   padding: 5px;
-  font-size: 12px;
-  letter-spacing: 2px;
+  font-size: 18px;
+  color: var(--prymari-white);
 }
 
 @media(min-width: 620px) {
-
   .page {
-    margin-top: 30px;
+    padding: 10px;
+  }
+
+  .picture {
+    width: 280px;
+    height: min-content;
+    border-radius: 10px;
+    overflow: hidden;
   }
 
   .container {
     grid-template-columns: min-content auto;
   }
 }
+/* 
+  @media (min-width: 768px) {
+    .picture {
+      width: 320px;
+    }
+  } */
+
+  @media (min-width: 920px) {
+    .picture {
+      width: 240px;
+    }
+  }

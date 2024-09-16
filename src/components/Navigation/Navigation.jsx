@@ -5,22 +5,22 @@ import { NavLink } from 'react-router-dom';
 
 const menuItemsData = [
     {
-        textContent: 'c:' + '\\' + 'Главная',
+        textContent:'Главная',
         link: '/'
     },
 
     {
-        textContent: 'D:' + '\\' + 'Разработка',
+        textContent:'Разработка',
         link: '/dev'
     },
 
     {
-        textContent: 'e:' +  '\\' + 'Музыка',
+        textContent:'Музыка',
         link: '/music'
     },
 
     {
-        textContent: 'f:' + '\\' + 'Графика',
+        textContent:'Графика',
         link: '/graphics'
     },
 ];

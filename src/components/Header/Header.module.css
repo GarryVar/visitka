@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   grid-area: header;
-  border-bottom: 4px double white;
+  border-bottom: 4px double var(--border-prymari);
   background-color: var(--prymari);
   z-index: 120;
 }
@@ -20,8 +20,14 @@
 }
 
 .headerTopBar img {
-  border: 4px double white;
+  border: 4px double var(--border-prymari);
   box-shadow: 5px 5px black;
+}
+
+.logo {
+  font-size: 30px;
+  color:  var(--prymari-white)
+
 }
 
 .headerBnBurger {
@@ -44,12 +50,24 @@
 .headerBnBurger span {
   height: 4px;
   width: 25px;
-  background-color: white;
+  background-color: var(--border-prymari);
 }
 
 @media (min-width: 620px) {
   .headerLayout {
       grid-template-columns: auto 1fr;
+  }
+
+  .headerTopBar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 152px;
+  }
+
+  .logo {
+    font-size: 50px;
+    text-align: center;
   }
 
   .headerBnBurger {
@@ -62,10 +80,14 @@
     border-bottom: none;
 }
 
+.headerTopBar {
+   border-bottom: 4px double var(--border-prymari)
+}
+
 .headerLayout {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    border-right: 4px double white;
+    border-right: 4px double var(--border-prymari);
     border-bottom: none;
     align-items: start;
     height: 100%;
