@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/GarryVar/visitka/static/css/main.57aa7e74.css",
-    "main.js": "/GarryVar/visitka/static/js/main.5e6a18e5.js",
-    "static/media/DelaGothicOne-Regular.woff": "/GarryVar/visitka/static/media/DelaGothicOne-Regular.9d02ec4e5c7d2693bf99.woff",
-    "static/media/DelaGothicOne-Regular.woff2": "/GarryVar/visitka/static/media/DelaGothicOne-Regular.94ce7e496591f3c3e7bd.woff2",
-    "static/media/wash_your_car.webp": "/GarryVar/visitka/static/media/wash_your_car.7846af7f55c7da289626.webp",
-    "static/media/hockey_club.webp": "/GarryVar/visitka/static/media/hockey_club.6547e9d36a9608ed7842.webp",
-    "static/media/PressStart2P-Regular.woff": "/GarryVar/visitka/static/media/PressStart2P-Regular.3f240878f9a3582f6bdc.woff",
-    "static/media/pie_cosmo_cake.webp": "/GarryVar/visitka/static/media/pie_cosmo_cake.009e5f8a81ef6bf4f567.webp",
-    "static/media/PressStart2P-Regular.woff2": "/GarryVar/visitka/static/media/PressStart2P-Regular.ab6f21a77a5e41f73761.woff2",
-    "static/media/red_eyes_totem.webp": "/GarryVar/visitka/static/media/red_eyes_totem.0ee383ccfe540a73b799.webp",
-    "static/media/tomahawk.webp": "/GarryVar/visitka/static/media/tomahawk.8a9b1d793973d2287825.webp",
-    "static/media/thumb-red_eyes_totem.webp": "/GarryVar/visitka/static/media/thumb-red_eyes_totem.2e6457ab5e4b586ec040.webp",
-    "static/media/thumb-wash_your_car.webp": "/GarryVar/visitka/static/media/thumb-wash_your_car.1b326b9e54361fcc1049.webp",
-    "static/media/thumb-hockey_club.webp": "/GarryVar/visitka/static/media/thumb-hockey_club.81598065c474fecc700b.webp",
-    "static/media/thumb-tomahawk.webp": "/GarryVar/visitka/static/media/thumb-tomahawk.9748272f3ac8c90538d8.webp",
-    "static/media/thumb-pie_cosmo_cake.webp": "/GarryVar/visitka/static/media/thumb-pie_cosmo_cake.0bafa28bc33e34d2a7ca.webp",
-    "index.html": "/GarryVar/visitka/index.html",
-    "main.57aa7e74.css.map": "/GarryVar/visitka/static/css/main.57aa7e74.css.map",
-    "main.5e6a18e5.js.map": "/GarryVar/visitka/static/js/main.5e6a18e5.js.map"
+    "main.css": "./static/css/main.74a7e300.css",
+    "main.js": "./static/js/main.2b1a56a1.js",
+    "static/media/DelaGothicOne-Regular.woff": "./static/media/DelaGothicOne-Regular.9d02ec4e5c7d2693bf99.woff",
+    "static/media/DelaGothicOne-Regular.woff2": "./static/media/DelaGothicOne-Regular.94ce7e496591f3c3e7bd.woff2",
+    "static/media/wash_your_car.webp": "./static/media/wash_your_car.7846af7f55c7da289626.webp",
+    "static/media/hockey_club.webp": "./static/media/hockey_club.6547e9d36a9608ed7842.webp",
+    "static/media/PressStart2P-Regular.woff": "./static/media/PressStart2P-Regular.3f240878f9a3582f6bdc.woff",
+    "static/media/pie_cosmo_cake.webp": "./static/media/pie_cosmo_cake.009e5f8a81ef6bf4f567.webp",
+    "static/media/PressStart2P-Regular.woff2": "./static/media/PressStart2P-Regular.ab6f21a77a5e41f73761.woff2",
+    "static/media/red_eyes_totem.webp": "./static/media/red_eyes_totem.0ee383ccfe540a73b799.webp",
+    "static/media/tomahawk.webp": "./static/media/tomahawk.8a9b1d793973d2287825.webp",
+    "static/media/thumb-red_eyes_totem.webp": "./static/media/thumb-red_eyes_totem.2e6457ab5e4b586ec040.webp",
+    "static/media/thumb-wash_your_car.webp": "./static/media/thumb-wash_your_car.1b326b9e54361fcc1049.webp",
+    "static/media/thumb-hockey_club.webp": "./static/media/thumb-hockey_club.81598065c474fecc700b.webp",
+    "static/media/thumb-tomahawk.webp": "./static/media/thumb-tomahawk.9748272f3ac8c90538d8.webp",
+    "static/media/thumb-pie_cosmo_cake.webp": "./static/media/thumb-pie_cosmo_cake.0bafa28bc33e34d2a7ca.webp",
+    "index.html": "./index.html",
+    "main.74a7e300.css.map": "./static/css/main.74a7e300.css.map",
+    "main.2b1a56a1.js.map": "./static/js/main.2b1a56a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.57aa7e74.css",
-    "static/js/main.5e6a18e5.js"
+    "static/css/main.74a7e300.css",
+    "static/js/main.2b1a56a1.js"
   ]
 }
