@@ -4,6 +4,7 @@
 }
 
 .container {
+  padding: 10px;
   display: grid;
   justify-items: center;
   gap: 10px;

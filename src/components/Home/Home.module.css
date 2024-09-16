@@ -1,0 +1,30 @@
+.content {
+  padding: 10px;
+}
+.title {
+  background-color: var(--orange);
+  padding: 5px;
+}
+
+.text {
+  margin-top: 10px;
+  color: var(--border-prymari);
+  background-color: rgba(151, 151, 151, 0.929);
+  padding: 8px;
+  /* border-radius: 10px; */
+}
+
+@media (min-width: 620px) {
+  .content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}

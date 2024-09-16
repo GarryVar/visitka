@@ -29,6 +29,7 @@
   --border-prymari: rgb(43 43 43);
   --warm: rgb(229, 211, 181);
   --hover: #0aa;
+  --orange: rgb(255 157 48);
 }
 
 *,
@@ -51,6 +52,7 @@ body {
   min-width: 320px;
   height: inherit;
   font-weight: 400;
+  color: var(--border-prymari);
   background-color: var(--warm);
   /* border: 5px double var(--border-prymari); */
 }
@@ -62,7 +64,6 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  position: absolute;
   margin: 0;
   padding: 0;
   color: var(--border-prymari);

@@ -7,9 +7,7 @@ export default class Picture extends Component  {
         
         <div className={styles.container}>
                 <img 
-                  onClick={this.props.onPicAnimate}
-                  className={`${styles.picture} ${!this.props.picAnimate ? 'animate__animated animate__flip' :''}` 
-                  }
+                  className={styles.picture} 
                   src={this.props.details.image}
                   width={this.props.details.width}
                   height={this.props.details.height}
