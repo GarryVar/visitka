@@ -1,29 +1,32 @@
 .list {
     display: grid;
-    border: 2px solid black;
+    grid-template-columns: max-content;
+    justify-content: center;
+    row-gap: var(--gap);
+    padding: 10px;
 }
 
 .link {
     display: grid;
-    font-size: 10px;
-    color: black;
-    outline: none;
-    padding: 5px;
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
+    gap: 10px;
+    justify-items: center;
+    font-size: 14px;
+    color: white;
+    padding: 6px;
+    padding-bottom: 8px;
 }
 
 .wrapper {
-    background-color: gray;
-    padding: 10px;
-    margin: 20px;
-
-    box-shadow: 15px 13px black;
+  padding: 10px;
+  margin: 20px;
 }
 
 .link:hover,
 .link:focus {
-    background-color:  #0aa;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    background-color: var(--hover);
 }
 
 .link img {
@@ -31,51 +34,8 @@
     display: flex;
 }
 
-.typing-demo {
-    width: 22ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 2em;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-
   @media (min-width: 620px) {
-    .wrapper {
-        width: 70%;
-    }
-
-      .gridItem {
-          font-size: 16px;
-      }
-  }
-
-
-
-  @media(min-width: 920px) {
-    .wrapper {
-        width: 75%;
-        background-color: gray;
-        padding: 10px;
-        margin: 10px;
-
-        box-shadow: 15px 13px black;
-    }
-
-    .grid {
-        border: 2px solid black;
+    .list {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
   }

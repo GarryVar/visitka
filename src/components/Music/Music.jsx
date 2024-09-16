@@ -5,7 +5,7 @@ export default class Music extends Component {
         return (
             <div className="content">
                 <div className="title">
-                    <h1 className="animate__animated animate__lightSpeedInRight">Музыка</h1>
+                    <h1 className="animate__animated animate__flipInX">Музыка</h1>
                 </div>
                 <p className="subtitle">Здесь представлены мои треки написаные в разные годы в ситле Goa Trance</p>
                 <span>Скоро здесь появится контент...</span>

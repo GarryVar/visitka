@@ -6,22 +6,32 @@ import Home from '../Home/Home';
 import Music from '../Music/Music'    
 import Graphics from '../Graphics/Graphics';
 import Header from './../Header/Header';
-import PictureDetail from '../PictureDetail/PictureDetail';    
+import PictureDetail from '../PictureDetail/PictureDetail';
 
 
 export default class Layout extends Component {
     constructor(props) {
         super(props);
   
-
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
         this.getDetail = this.getDetail.bind(this);
+        this.onPicAnimate = this.onPicAnimate.bind(this);
 
         this.state = {
             menuVisible: false,
-            showBicPic: false,
+            picAnimate: false,
+            pictures: this.props.pictures
         }
     }
+    
+    onPicAnimate (e) {
+        let image = e.currentTarget;
+        if (image.localName === "img") {
+            this.setState((state) => ({picAnimate: !state.picAnimate}))
+            }
+
+        }
+
 
     onShowNavMenu (e) {
         let btn = e.currentTarget;
@@ -38,7 +48,6 @@ export default class Layout extends Component {
         return (
             
             <HashRouter>
-                
                 <div className={style.layout}>
                 
 
@@ -63,6 +72,7 @@ export default class Layout extends Component {
                             <Route
                                 path="/music"
                                 element={<Music />}>
+
                             </Route>
 
                             <Route 
@@ -74,10 +84,12 @@ export default class Layout extends Component {
          
                             </Route>
                             <Route
-                                path='/:key'
+                                path="/:key"
                                 element={
                                     <PictureDetail
-                                        getDetail={this.getDetail} />
+                                        getDetail={this.getDetail}
+                                        picAnimate={this.state.picAnimate}
+                                        onPicAnimate={this.onPicAnimate} />
                                 }>
                         </Route>
                         </Routes>
@@ -91,6 +103,7 @@ export default class Layout extends Component {
                     </footer> */}
                 </div>
             </HashRouter>
+        
         )
     }
 }
