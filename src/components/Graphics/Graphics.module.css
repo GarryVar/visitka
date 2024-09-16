@@ -39,3 +39,15 @@
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
   }
+
+@media (min-width: 920px) {
+    .wrapper {
+        min-width: 80%;
+    }
+}
+@media (min-width: 1200px) {
+    .wrapper {
+        margin: auto;
+        max-width: 920px;
+    }
+}

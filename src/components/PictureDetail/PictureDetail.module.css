@@ -44,14 +44,12 @@
     grid-template-columns: min-content auto;
   }
 }
-/* 
-  @media (min-width: 768px) {
-    .picture {
-      width: 320px;
-    }
-  } */
 
-  @media (min-width: 920px) {
+  @media (min-width: 1024px) {
+    .page {
+      width: 70%;
+    }
+
     .picture {
       width: 240px;
     }

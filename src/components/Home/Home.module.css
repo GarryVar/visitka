@@ -28,3 +28,10 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 920px) {
+  .content {
+    margin: auto;
+    width: 80%;
+  }
+}
