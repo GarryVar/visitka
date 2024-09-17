@@ -47,10 +47,10 @@
 
   @media (min-width: 1024px) {
     .page {
-      width: 70%;
+      width: 920px;
     }
 
     .picture {
-      width: 240px;
+      width: 320px;
     }
   }
