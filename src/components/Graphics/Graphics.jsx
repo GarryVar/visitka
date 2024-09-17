@@ -8,7 +8,6 @@ import {Link} from "react-router-dom";
                 <div className="title">
                     <h1 className="animate__animated animate__flipInX">Графика</h1>
                 </div>
-                <p className="subtitle">Небольшая коллекция изображений, созданая при помоще Corel Draw Graphic 2019</p>
                 <div className={style.wrapper}>
                     <ul className={style.list}>
                         {
