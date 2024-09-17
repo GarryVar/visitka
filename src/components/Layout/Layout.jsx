@@ -16,12 +16,30 @@ export default class Layout extends Component {
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
         this.getDetail = this.getDetail.bind(this);
         this.onPicAnimate = this.onPicAnimate.bind(this);
+        this.onShowWidePictures = this.onShowWidePictures.bind(this);
+        this.onShowNormalPictures = this.onShowNormalPictures.bind(this);
+        this.onShowAllPictures = this.onShowAllPictures.bind(this);
 
         this.state = {
             menuVisible: false,
             picAnimate: false,
             pictures: this.props.pictures
         }
+    }
+
+    onShowAllPictures () {
+        let allPictures = this.props.pictures.filter((i) => i)
+        this.setState(state => ({pictures: allPictures}))
+    }
+
+    onShowWidePictures () {
+        let widePictures = this.props.pictures.filter((i) => !i.wide)
+        this.setState(state => ({pictures: widePictures}))
+    }
+
+    onShowNormalPictures () {
+        let normalPictures = this.props.pictures.filter((i) => i.wide === true);
+        this.setState(state => ({pictures: normalPictures}))
     }
     
     onPicAnimate (e) {
@@ -79,7 +97,11 @@ export default class Layout extends Component {
                                 path="/graphics" 
                                 element={
                                         <Graphics 
-                                            data={ this.props.pictures} />
+                                            data={ this.state.pictures}
+                                            orientation={this.state.orientation}
+                                            onShowWidePictures={this.onShowWidePictures}
+                                            onShowNormalPictures={this.onShowNormalPictures}
+                                            onShowAllPictures={this.onShowAllPictures}/>
                                         }>
          
                             </Route>
