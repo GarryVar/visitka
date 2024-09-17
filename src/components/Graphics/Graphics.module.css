@@ -4,6 +4,8 @@
     justify-content: center;
     row-gap: var(--gap);
     padding: 10px;
+    background-color: rgba(151, 151, 151, 0.929);
+    border: 4px double var(--border-prymari);
 }
 
 .link {
@@ -12,12 +14,10 @@
     justify-items: center;
     font-size: 14px;
     color: white;
-    padding: 6px;
-    padding-bottom: 8px;
+    padding: 6px 6px 8px;
 }
 
 .wrapper {
-  padding: 10px;
   margin: 20px;
 }
 
@@ -26,7 +26,6 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
-    background-color: var(--hover);
 }
 
 .link img {
@@ -36,18 +35,13 @@
 
   @media (min-width: 620px) {
     .list {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(190px, 190px));
+        gap: 10px;
     }
   }
 
-@media (min-width: 920px) {
-    .wrapper {
-        min-width: 80%;
-    }
-}
 @media (min-width: 1200px) {
     .wrapper {
-        margin: auto;
         max-width: 920px;
     }
 }
