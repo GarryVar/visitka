@@ -1,6 +1,5 @@
 .page {
   background-color: transparent;
-  /* margin-top: var(--gap); */
 }
 
 .container {
@@ -17,7 +16,6 @@
 
 .picture {
   width: 280px;
-  height: 150px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -66,12 +64,9 @@
     overflow: hidden;
   }
 
-  .container {
-    grid-template-columns: min-content auto;
-  }
 }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .page {
       width: 920px;
     }

@@ -7,20 +7,10 @@ export default class Picture extends Component  {
   constructor(props) {
     super(props);
 
-    // this.onClickLike = this.onClickLike.bind(this);
-
     this.state = {
       likes: this.props.details.like
     };
-
-
 }
-
-    // onClickLike () {
-    //   this.ff(this)
-    //   // this.setState(s => ({likes: this.state.likes}))
-    // };
-
 
   render() {
       return (  
