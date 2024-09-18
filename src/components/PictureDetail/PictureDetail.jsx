@@ -7,7 +7,7 @@ const PictureDetail = (props) => {
   const {key} = useParams();
 
   const details = props.getDetail(key);
-  const { title, subtitle} = details;
+  const { title} = details;
 
   return (  
         <div className="content">

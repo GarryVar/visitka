@@ -29,24 +29,58 @@ export default class Home extends Component {
                 <p className={style.text}>
                     <span className={style.css}>#CSS:</span>
                     <ol>
-                        <li><strong>Flex-box: </strong> технология создания макро и микро сеток! <code>display: flex;</code> <code>flex-direction: row;</code> <code>flex-grow: 1;</code> ...</li>
-                        <li><strong>Grid: </strong> <b>Мощьнейшая!!!</b>  технология создания макро и микро сеток! <code>grid-template-areas</code> <code>grid-row: 1 / 4;</code> <code>grid-column: 2 /4;</code></li>
-                        <li><strong>БЭM: </strong> строгое соответствие методологии <code>.block</code><code>.block__elem</code> <code>block--modificator</code> <code>block__elem--modificator</code></li>
-                        <li><strong>Mobile first:</strong>С начало верстка под мобильные устройства, потом планшеты и десктопы <code>@media(min-width: 320px)</code> <code>@media(min-width: 768px)</code> <code>@media(min-width: 1200px)</code></li>
-                        <li><strong>Новые фичи:</strong> Css постоянно развивается и поддерживается, поэтому каждый раз  появляются новые свойства <code>@container()</code> <code>:is() и :where()</code> <code>color: hsl(50deg 100% 50% / .5);</code></li>
-                        <li>Имею опыт использования препроцессоров <strong>Sass, Less</strong>.</li>
+                        <li>
+                            <strong>Flex-box: </strong> технология создания макро и микро сеток!
+                            <code>display: flex;</code> 
+                            <code>flex-direction: row;</code>
+                            <code>flex-grow: 1;</code> ...
+                        </li>
+
+                        <li>
+                            <strong>Grid: </strong>
+                             <b>Мощьнейшая!!!</b>  технология создания макро и микро сеток! 
+                             <code>grid-template-areas</code> 
+                             <code>grid-row: 1 / 4;</code> 
+                             <code>grid-column: 2 /4;</code>
+                        </li>
+
+                        <li>
+                            <strong>БЭM: </strong> 
+                            строгое соответствие методологии 
+                            <code>.block</code>
+                            <code>.block__elem</code>
+                            <code>.block--modificator</code>
+                            <code>.block__elem--modificator</code>
+                        </li>
+
+                        <li>
+                            <strong>Mobile first:</strong>
+                            С начало верстка под мобильные устройства, потом планшеты и десктопы 
+                            <code>@media(min-width: 320px)</code>
+                            <code>@media(min-width: 768px)</code>
+                            <code>@media(min-width: 1200px)</code>
+                        </li>
+
+                        <li>
+                            <strong>Новые фичи:</strong>
+                             Css постоянно развивается и поддерживается вследствии чего каждый раз  появляются новые свойства, потому постоянное изучение доументаций, новых течений, подходов и свойств у меня это обязательно.<code>@container()</code>
+                            <code>:is() и :where()</code> 
+                            <code>color: hsl(50deg 100% 50% / .5);</code>
+                        </li>
+
+                        <li>Имею опыт использования препроцессоров 
+                            <strong>Sass, Less</strong>
+                        </li>
                     </ol>
                 </p>
 
-
-                
                 <p className={`${style.text} ${style.jsModifer}`}>
                     <span className={style.js}>#JAVASCRIPT:</span>
                     <ol>
                         <li><strong>DOM: </strong> <code>getElementById(...)</code> <code>querySelectorAll(...)</code><code>classList.add(...)</code>и другие методы для изменения и минипулирования  DOM элементами. </li>
                         <li><strong>Devtools: </strong> <code>debugger;</code> дебагинг кода, поиск ошибок с помощью браузерных средств разработки.</li>
-                        <li><strong>Функци: </strong><code>"function someF() {}, () => {} return"</code>аргументы, параметры, коллбэки,возращаемые значения, чисты функции, замыкания, области, видимости function expression ,function declaration и.т.д.</li>
-                        <li><strong>Цыклы, условия, операторы: </strong> <code>if(true) {} else, for(..)</code>, <code>switch case:, ?, :, & ||, &&</code></li>
+                        <li><strong>Функци: </strong><code> <i>function</i> someF() {}, () => {} return</code>аргументы, параметры, коллбэки,возращаемые значения, чисты функции, замыкания, области, видимости function expression ,function declaration и.т.д.</li>
+                        <li><strong>Цыклы, условия, операторы: </strong> <code>if(true) {} else, for(..)</code><code>switch case:, ?, :, & ||, &&</code></li>
                         <li><strong>Массивы, объекты, классы: </strong>< code>const array = [...], new Object(),</code> <code>class Component extends...., this</code></li>
                         <li><strong>Методы массивов</strong> <code>forEach(...)</code><code>map(...)</code><code>filter(...)</code><code>push(...)</code><code>slice(...)</code><code>shift(...)</code></li>
                         <li><strong>ES6: </strong>модули, деструктуризация, стрелочные функции <code> import module from "../../path"</code></li>

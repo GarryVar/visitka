@@ -14,10 +14,6 @@
   border-bottom: 2px solid var(--prymari-white);
 }
 
-.content ol li:nth-child(2n) {
-  text-align: right;
-}
-
 .css, 
 .js {
   display: block;
