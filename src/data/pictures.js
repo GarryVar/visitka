@@ -25,7 +25,8 @@ export const pictures = [
       subtitle: "Логотип вымышленной хоккейной команды Hockey Club Wigwams",
       desc: "Все элементы логотипа отрисованы с нуля. Красивый и выдержаный дизайн логотипа вполне соответствует своему хокейному характеру. Да и просто, получился красивый :)",
       showBig: false,
-      key: "Ku6oMu7P0o"
+      key: "Ku6oMu7P0o",
+      like: 0
     },
 
     {
@@ -42,7 +43,8 @@ export const pictures = [
       subtitle: "Это баннер, логотип для автомоки",
       desc: "Это выдуманый логотип космически вкусного коктейля. Свежесть и прохлада космоса в вашем коктейле",
       showBig: false,
-      key: "pL9kmJY14T"
+      key: "pL9kmJY14T",
+      like: 0,
     },
 
     {
@@ -59,7 +61,8 @@ export const pictures = [
       title: "Wash your car",
       subtitle: "Это баннер, логотип для автомоки",
       desc: "Этот баннер красноречиво говорит помой машину Wash Your Car!!",
-      key: "10Olj8Hn74"
+      key: "10Olj8Hn74",
+      like: 0,
     },
 
     {
@@ -76,7 +79,8 @@ export const pictures = [
       title: "Red Eyes Totem",
       subtitle: "Красноглазый тотем логотип.",
       desc: "Red Eyes Totem мой музыкаьлный проект, в стиле шаманского эмбиента и трайбла с психоделическим звучанием, с невероятно гипнотической и атмосферой, которая переносит вас в состояния шаманского транса. трека",
-      key: "hs9N634VFg"
+      key: "hs9N634VFg",
+      like: 0,
     },
 
     {
@@ -93,6 +97,7 @@ export const pictures = [
       title: "Tomahawk",
       subtitle: "Логотип в индейской тематике",
       desc: "Вымышленый логотип звукозаписывающей студии Tomahawk records",
-      key: "xKi8ag6Nb1"
+      key: "xKi8ag6Nb1",
+      like: 0,
     },
 ];

@@ -9,6 +9,7 @@ import { pictures } from './data/pictures.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Layout pictures={pictures} />
+        <Layout
+            pictures={pictures} />
     </React.StrictMode>
 );

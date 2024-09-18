@@ -15,51 +15,38 @@ export default class Layout extends Component {
   
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
         this.getDetail = this.getDetail.bind(this);
-        this.onPicAnimate = this.onPicAnimate.bind(this);
-        this.onShowWidePictures = this.onShowWidePictures.bind(this);
-        this.onShowNormalPictures = this.onShowNormalPictures.bind(this);
-        this.onShowAllPictures = this.onShowAllPictures.bind(this);
+
 
         this.state = {
             menuVisible: false,
-            picAnimate: false,
-            pictures: this.props.pictures
+            pictures: this.props.pictures,
         }
     }
 
     onShowAllPictures () {
-        let allPictures = this.props.pictures.filter((i) => i)
+        let allPictures = this.props.pictures.filter((picture) => picture)
         this.setState(state => ({pictures: allPictures}))
     }
 
     onShowWidePictures () {
-        let widePictures = this.props.pictures.filter((i) => !i.wide)
+        let widePictures = this.props.pictures.filter(({wide}) => !wide)
         this.setState(state => ({pictures: widePictures}))
     }
 
     onShowNormalPictures () {
-        let normalPictures = this.props.pictures.filter((i) => i.wide === true);
+        let normalPictures = this.props.pictures.filter(({wide}) => wide === true);
         this.setState(state => ({pictures: normalPictures}))
     }
     
-    onPicAnimate (e) {
-        let image = e.currentTarget;
-        if (image.localName === "img") {
-            this.setState((state) => ({picAnimate: !state.picAnimate}))
-            }
-
-        }
-
-
     onShowNavMenu (e) {
         let btn = e.currentTarget;
         if (btn.localName === 'button') {
-            this.setState((state) => ({menuVisible: !state.menuVisible}))
+            this.setState(state => ({menuVisible: !state.menuVisible}))
         }
     }
 
     getDetail (key) {
-        return this.props.pictures.find(i => i.key === key);
+        return this.state.pictures.find(i => i.key === key);
     }
 
     render() {
@@ -97,23 +84,22 @@ export default class Layout extends Component {
                                 path="/graphics" 
                                 element={
                                         <Graphics 
-                                            data={ this.state.pictures}
-                                            orientation={this.state.orientation}
+                                            data={this.state.pictures}
                                             onShowWidePictures={this.onShowWidePictures}
                                             onShowNormalPictures={this.onShowNormalPictures}
                                             onShowAllPictures={this.onShowAllPictures}/>
                                         }>
          
                             </Route>
+
                             <Route
                                 path="/:key"
                                 element={
                                     <PictureDetail
                                         getDetail={this.getDetail}
-                                        picAnimate={this.state.picAnimate}
                                         onPicAnimate={this.onPicAnimate} />
                                 }>
-                        </Route>
+                            </Route>
                         </Routes>
 
                     </main>
