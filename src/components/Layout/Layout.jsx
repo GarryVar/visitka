@@ -15,33 +15,24 @@ export default class Layout extends Component {
   
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
         this.getDetail = this.getDetail.bind(this);
-        this.onPicAnimate = this.onPicAnimate.bind(this);
 
         this.state = {
             menuVisible: false,
-            picAnimate: false,
-            pictures: this.props.pictures
+            pictures: this.props.pictures,
         }
     }
     
-    onPicAnimate (e) {
-        let image = e.currentTarget;
-        if (image.localName === "img") {
-            this.setState((state) => ({picAnimate: !state.picAnimate}))
-            }
-
-        }
-
 
     onShowNavMenu (e) {
         let btn = e.currentTarget;
         if (btn.localName === 'button') {
-            this.setState((state) => ({menuVisible: !state.menuVisible}))
+            this.setState(s => ({menuVisible: !s.menuVisible}))
         }
     }
 
+
     getDetail (key) {
-        return this.props.pictures.find(i => i.key === key);
+        return this.state.pictures.find(i => i.key === key);
     }
 
     render() {
@@ -79,19 +70,19 @@ export default class Layout extends Component {
                                 path="/graphics" 
                                 element={
                                         <Graphics 
-                                            data={ this.props.pictures} />
+                                            data={ this.state.pictures } />
                                         }>
          
                             </Route>
+
                             <Route
                                 path="/:key"
                                 element={
                                     <PictureDetail
                                         getDetail={this.getDetail}
-                                        picAnimate={this.state.picAnimate}
                                         onPicAnimate={this.onPicAnimate} />
                                 }>
-                        </Route>
+                            </Route>
                         </Routes>
 
                     </main>

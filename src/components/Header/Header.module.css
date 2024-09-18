@@ -47,10 +47,13 @@
   border: none;
 }
 
-.headerBnBurger span {
-  height: 4px;
-  width: 25px;
-  background-color: var(--border-prymari);
+.headerBnBurger svg {
+  fill: var(--border-prymari);
+}
+
+.headerBnBurger svg:hover,
+.headerBnBurger svg:focus {
+  fill: var(--prymari-white);
 }
 
 @media (min-width: 620px) {

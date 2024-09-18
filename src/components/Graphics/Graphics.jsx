@@ -1,7 +1,7 @@
 import style from "./Graphics.module.css";
 import {Link} from "react-router-dom";
 
- const Graphics = (props) => {
+ const Graphics = ({data}) => {
         return (
 
             <div className="content">
@@ -12,7 +12,7 @@ import {Link} from "react-router-dom";
                 <div className={style.wrapper}>
                     <ul className={style.list}>
                         {
-                            props.data.map(({thumb, title, key, thumbWidth, thumbHeight}) =>
+                            data.map(({thumb, title, key, thumbWidth, thumbHeight}) =>
                                 <li key={key}>
                                    
                                     <Link
