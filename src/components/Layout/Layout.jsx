@@ -15,6 +15,9 @@ export default class Layout extends Component {
   
         this.onShowNavMenu = this.onShowNavMenu.bind(this);
         this.getDetail = this.getDetail.bind(this);
+        this.onShowAllPictures = this.onShowAllPictures.bind(this);    
+        this.onShowWidePictures = this.onShowWidePictures.bind(this);
+        this.onShowNormalPictures = this.onShowNormalPictures.bind(this);
 
 
         this.state = {
@@ -24,17 +27,18 @@ export default class Layout extends Component {
     }
 
     onShowAllPictures () {
-        let allPictures = this.props.pictures.filter((picture) => picture)
+        let allPictures = this.props.pictures.filter(picture => picture)
         this.setState(state => ({pictures: allPictures}))
     }
 
     onShowWidePictures () {
-        let widePictures = this.props.pictures.filter(({wide}) => !wide)
+        let widePictures = this.props.pictures.filter(i => !i.wide)
         this.setState(state => ({pictures: widePictures}))
     }
 
     onShowNormalPictures () {
-        let normalPictures = this.props.pictures.filter(({wide}) => wide === true);
+        // debugger;
+        let normalPictures = this.props.pictures.filter(i => i.wide === true);
         this.setState(state => ({pictures: normalPictures}))
     }
     
