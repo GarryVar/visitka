@@ -43,10 +43,8 @@
     padding: calc(var(--gap) / 2);
     width: 100%;
     color: var(--border-prymari);
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: 14px;
     letter-spacing: 1px;
-    outline: none;
 
 }
 

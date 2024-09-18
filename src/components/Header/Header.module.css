@@ -50,10 +50,11 @@
   fill: var(--border-prymari);
 }
 
-.headerBnBurger svg:hover,
-.headerBnBurger svg:focus {
+.headerBnBurger:hover  svg,
+.headerBnBurger:focus  svg {
   fill: var(--prymari-white);
 }
+
 
 @media (min-width: 620px) {
   .headerLayout {
@@ -80,6 +81,9 @@
 @media (min-width: 920px) {
   .header {
     border-bottom: none;
+    position: fixed;
+    width: 280px;
+    height: 100%;
 }
 
 .headerTopBar {
@@ -95,3 +99,5 @@
     height: 100%;
   }
 }
+
+

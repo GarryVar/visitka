@@ -8,9 +8,6 @@
         'main';
     height: inherit;
 
-    /* overflow: scroll; */
-    scrollbar-color: var(--main-light-border) var(--prymari-opacity1);
-    scrollbar-width: thin;
 }
 
 .inner {

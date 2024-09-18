@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
                 <div className="title">
                     <h1 className="animate__animated animate__flipInX">Графика</h1>
                 </div>
-                <div className={style.wrapper}>
+                <div className={`${style.wrapper} animate__animated animate__fadeIn`}>
 
                     <div className={style.filters}>
                         <h3 className={style.filtersCaption}>Фильтр ориентации изображений</h3>

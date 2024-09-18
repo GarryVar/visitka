@@ -16,7 +16,7 @@ const PictureDetail = (props) => {
              <h1 className="animate__animated animate__headShake">{title}</h1>
           </div>
 
-            <div className="subtitle">{subtitle}</div>
+            {/* <div className="subtitle">{subtitle}</div> */}
 
             <div className={styles.page}>
               <Picture

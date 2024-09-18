@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const menuItemsData = [
     {
-        textContent:'Главная',
+        textContent:'Обо мне',
         link: '/'
     },
 
