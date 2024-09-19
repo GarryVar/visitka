@@ -1,0 +1,81 @@
+.content {
+    background-color: var(--system);
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+            "cover cover cover"
+            "player player player";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.title {
+    grid-area: title;
+}
+
+.cover {
+    width: 180px;
+    height: 180px;
+    grid-column: 1 / -1;
+    grid-area: cover;
+
+    background-color: var(--prymari-dark);
+}
+
+.track {
+    display: grid;
+    row-gap: 10px;
+    width: 100%;
+    grid-column: 1/ -1;
+}
+
+.trackTitle {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 4px double var(--prymari-dark);
+}
+
+.player {
+    display: grid;
+    row-gap: 20px;
+    grid-area: player;
+
+    padding: 20px;
+    width: 100%;
+}
+.playerControls {
+    display: grid;
+    column-gap: 10px;
+    justify-content: center;
+    grid-template-columns: min-content min-content min-content;
+}
+
+.controlButton {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--prymari-dark);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.controlButton svg {
+    fill: var(--text-color);
+}
+
+input[type="range"] {
+    accent-color: var(--text-color);
+}

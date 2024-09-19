@@ -21,11 +21,10 @@
     min-height: 320px;
     border-bottom: none;
     overflow: auto;
-    background-color: var(--prymari-dark);
+    background-color: var(--system);
 }
 
 .footer {
-    border-top: 4px double  var(--border-primary);
     grid-area: footer;
     z-index: 100;
     background-color: var(--prymari);

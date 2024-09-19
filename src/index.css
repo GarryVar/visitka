@@ -31,17 +31,20 @@
 :root {
   --prymari: #edf2fa;
   --prymari-dark: #d9dee7;
-  --prymari-white: rgb(255, 255, 238);
+  --prymari-white: rgb(255, 255, 255);
   --prymari-opacity1: rgba(151, 151, 151, 0.929);
   --gap: 20px;
-  --border-prymari: #01231f;
+  --system: #f1f3f4;
+  --border-prymari: var(--prymari-dark);
   --warm: rgb(229, 211, 181);
-  --hover: #ac6;
+  --hover: #2c467c;
   --orange: rgb(255 157 48);
-  --hyper-link: rgb(255, 255, 238);
+  --hyper-link: rgb(86, 137, 213);
   --css: #1d4492;
   --js: #ffd829;
   --git: #f14e32;
+  --nodejs: #7cb602;
+  --codeBg: black;
 
   --bg-color: hsl(0deg 0% 100%);
   --text-color: #173964e0;
@@ -67,12 +70,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width: 320px;
   height: inherit;
   font-weight: 400;
-  color: var(--border-prymari);
-  background-color: var(--warm);
-  /* border: 5px double var(--border-prymari); */
+  color: var(--text-color);
 }
 
 h1,
@@ -148,7 +148,6 @@ figure {
   text-underline-offset: 3px;
 }
 
-
 .hyper-link:hover,
 .hyper-link:focus {
   color: var(--css);
@@ -158,10 +157,7 @@ figure {
 .subtitle {
   min-height: 100px;
   top: 0;
-  color: var(--border-prymari);
-  /* border-bottom: 4px double var(--border-prymari); */
-  background-color: var(--prymari-dark);
-  /* text-shadow: 4px 4px black; */
+  color: var(--text-color);
 }
 
 .title {
@@ -173,7 +169,9 @@ figure {
 
 .title h1 {
   font-size: 30px;
-  color: var(--prymari-white);
+  text-transform: uppercase;
+
+  border-bottom: 6px double var(--text-color);
 }
 
 .subtitle {
@@ -197,9 +195,8 @@ code {
   width: fit-content;
   color: var(--orange);
   font-family: 'IBM Plex Mono';
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; */
   padding: 5px;
-  background-color: var(--border-prymari);
+  background-color: var(--codeBg);
   border-radius: 5px;
 }
 

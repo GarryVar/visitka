@@ -2,8 +2,7 @@
   position: sticky;
   top: 0;
   grid-area: header;
-  border-bottom: 4px double var(--border-prymari);
-  background-color: var(--prymari);
+  background-color: var(--prymari-dark);
   z-index: 120;
 }
 
@@ -47,12 +46,12 @@
 }
 
 .headerBnBurger svg {
-  fill: var(--border-prymari);
+  fill: var(--text-color);
 }
 
 .headerBnBurger:hover  svg,
 .headerBnBurger:focus  svg {
-  fill: var(--prymari-white);
+  fill: var(--hover);
 }
 
 
@@ -86,15 +85,10 @@
     height: 100%;
 }
 
-.headerTopBar {
-   border-bottom: 4px double var(--border-prymari)
-}
 
 .headerLayout {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    border-right: 4px double var(--border-prymari);
-    border-bottom: none;
     align-items: start;
     height: 100%;
   }

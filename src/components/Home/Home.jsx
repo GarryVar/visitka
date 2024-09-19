@@ -6,13 +6,13 @@ export default class Home extends Component {
         return (
             <div className="content">
                 <div className="title">
-                    <h1 className="animate__animated animate__flipInX">Обо мне</h1>
+                    <h1 className="animate__animated animate__flipInX">Про меня</h1>
                 </div>
                 {/* <p className="subtitle">Привет! меня зовут Игорь я изучаю фронтенд, <br /> пишу музыку и увлекаюсь графикой.</p> */}
                 <div className={`${style.content} animate__animated animate__fadeIn`}>
-                <h2 className={style.title}>Кто я ?</h2>
+                <h2 className={style.title}>Привет!</h2>
                 <img src="" alt="" />
-                <p className={style.text}>Привет меня зовут Игорь несколько лет назад меня увлек мир веб-разработки и с тех пор я изучаю всё что с ним связано. В 2020 году, я совершенно случайно узнал  про онлайн - курсы <a className="hyper-link" href="https://htmlacademy.ru/study"> Html Academy</a>  по верстке, где просидел пол ночи проходя бесплатные тренажеры это настолько сильно меня завлекло, что через некоторое время  я стал студентом  
+                <p className={style.text}>Я Игорь, несколько лет назад меня увлек мир веб-разработки и с тех пор я изучаю всё что с ним связано. В 2020 году, я совершенно случайно узнал  про онлайн - курсы <a className="hyper-link" href="https://htmlacademy.ru/study"> Html Academy</a>  по верстке, где просидел пол ночи проходя бесплатные тренажеры это настолько сильно меня завлекло, что через некоторое время  я стал студентом
                     Где моим лекторами являлcя известный <a className="hyper-link" href="https://github.com/pepelsbey">Ваидм Макеев</a>
                 </p>
                 <p className={style.text}>
@@ -30,7 +30,10 @@ export default class Home extends Component {
                 <h2 className={style.title}>Мои навыки</h2>
 
                 <p className={style.text}>
-                    <span className={style.css}>#CSS:</span>
+                    <h3 className={`${style.technologyTitle} ${style.css}`}>
+                        <span className={style.techTag}>#technology</span>
+                        #CSS:
+                    </h3>
                     <ol>
                         <li>
                             <strong>Flex-box: </strong> технология создания макро и микро сеток!
@@ -87,7 +90,7 @@ export default class Home extends Component {
                 </p>
 
                 <p className={`${style.text} ${style.jsModifer}`}>
-                    <span className={style.js}>#JAVASCRIPT:</span>
+                    <h3 className={`${style.technologyTitle} ${style.js}`}>#JAVASCRIPT:</h3>
                     <ol>
                         <li><strong>DOM: </strong> <code>getElementById(...)</code> <code>querySelectorAll(...)</code><code>classList.add(...)</code>и другие методы для изменения и минипулирования  DOM элементами. </li>
                         <li>
@@ -111,7 +114,7 @@ export default class Home extends Component {
 
                 <h2 className={style.title}>Ещё что?</h2>
                 <p className={style.text}>
-                    <span className={`${style.css} ${style.nodejs}`}>#Nodejs:</span>
+                    <h3 className={`${style.technologyTitle} ${style.nodejs}`}>#Nodejs:</h3>
                     <ol>
                         <li><strong>NPM:</strong> Установка пакетов(модулей) для разработки, обновление, удаление 
                             <code>npm install @some-module --save-dev</code>
@@ -124,7 +127,7 @@ export default class Home extends Component {
 
                 <h2 className={style.title}>Ещё также!</h2>
                 <p className={style.text}>
-                    <span className={`${style.css} ${style.git}`}>#Git:</span>
+                    <h3 className={`${style.technologyTitle} ${style.git}`}>#Git:</h3>
                     <ol>
                         <li>
                             <strong>Консольные команды: </strong>
