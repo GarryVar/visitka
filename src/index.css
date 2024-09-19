@@ -29,8 +29,8 @@
 
 
 :root {
-  --prymari: rgb(151, 151, 151);
-  --prymari-dark: rgb(122, 122, 122);
+  --prymari: #edf2fa;
+  --prymari-dark: #d9dee7;
   --prymari-white: rgb(255, 255, 238);
   --prymari-opacity1: rgba(151, 151, 151, 0.929);
   --gap: 20px;
@@ -40,9 +40,11 @@
   --orange: rgb(255 157 48);
   --hyper-link: rgb(255, 255, 238);
   --css: #1d4492;
+  --js: #ffd829;
+  --git: #f14e32;
 
   --bg-color: hsl(0deg 0% 100%);
-  --text-color: hsl(0deg 0% 0%);
+  --text-color: #173964e0;
 
   height: 100%; 
 }
@@ -82,7 +84,7 @@ h6 {
   font-weight: normal;
   margin: 0;
   padding: 0;
-  color: var(--border-prymari);
+  color: var(--text-color);
 }
 
 img {
@@ -97,7 +99,7 @@ a {
 strong {
   font-size: 18px;
   font-weight: normal;
-  color: var(--prymari-white);
+  color: var(--git);
 }
 
 p {
@@ -154,8 +156,7 @@ figure {
 
 .title,
 .subtitle {
-  position: sticky;
-  min-height: 60px;
+  min-height: 100px;
   top: 0;
   color: var(--border-prymari);
   /* border-bottom: 4px double var(--border-prymari); */
@@ -164,15 +165,14 @@ figure {
 }
 
 .title {
-  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
-  font-size: 12px;
 }
 
 .title h1 {
+  font-size: 30px;
   color: var(--prymari-white);
 }
 
@@ -181,7 +181,6 @@ figure {
   display: flex;
   align-items: center;
   padding: 10px;
-  font-size: 12px;
   background-color: var(--prymari-opacity1);
 }
 

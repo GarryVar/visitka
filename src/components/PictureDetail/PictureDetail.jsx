@@ -10,7 +10,7 @@ const PictureDetail = (props) => {
   const { title} = details;
 
   return (  
-        <div className="content">
+        <div className="content animate__animated animate__fadeIn">
 
           <div className="title">
              <h1 className="animate__animated animate__headShake">{title}</h1>

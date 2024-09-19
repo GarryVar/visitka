@@ -18,6 +18,7 @@ export default class Layout extends Component {
         this.onShowAllPictures = this.onShowAllPictures.bind(this);    
         this.onShowWidePictures = this.onShowWidePictures.bind(this);
         this.onShowNormalPictures = this.onShowNormalPictures.bind(this);
+        this.onShowCroll= this.onShowCroll.bind(this);
 
 
         this.state = {
@@ -53,6 +54,10 @@ export default class Layout extends Component {
         return this.state.pictures.find(i => i.key === key);
     }
 
+    onShowCroll (e) {
+        console.log(this.scrollTop)
+    }
+
     render() {
         return (
             
@@ -65,7 +70,7 @@ export default class Layout extends Component {
                         onShowNavMenu={this.onShowNavMenu}
                     />
 
-                    <main className={style.main}>
+                    <main className={style.main} onScroll={this.onShowCroll.bind(this)}>
                         
                         <Routes>
                             <Route
@@ -113,7 +118,7 @@ export default class Layout extends Component {
                             <p className="version">v:2.0.1</p>
                         </div>
                     </footer> */}
-                </div>
+                    </div>
             </HashRouter>
         
         )

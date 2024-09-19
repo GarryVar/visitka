@@ -15,34 +15,47 @@
 }
 
 .css, 
-.js {
+.js,
+.nodejs,
+.git {
   display: block;
   padding: 10px;
   font-size: 30px;
   border-bottom: 4px double var(--border-prymari);
+  text-shadow: -1px 1px 4px hsl(0deg 0% 0% / 68%);
 }
+
 
 .css {
   color: var(--css);
 }
 
 .js {
-  color: #ffd829;
+  color: var(--js);
+}
+
+.nodejs {
+  color: #7cb602;
+}
+
+.git {
+  color: var(--git);
 }
 
 .title {
   font-size: 40px;
   position: relative;
   padding: 5px;
-  color: var(--prymari-white);
+  color: var(--text-color);
 }
 
 .text {
   margin-top: 10px;
-  color: var(--border-prymari);
-  background-color: rgba(151, 151, 151, 0.929);
-  padding: 8px;
+  color: var(--text-color);
+  background-color: rgba(--prymari-dark);
+  padding: 18px;
   border-radius: 10px;
+  box-shadow: 0 5px 10px  rgb(83, 83, 83);
 }
 
 @media (min-width: 620px) {
@@ -63,7 +76,7 @@
 
 @media (min-width: 920px) {
   .content {
-    margin: auto;;
+    margin: auto;
   }
 }
 
@@ -71,12 +84,11 @@
   .content {
     display: grid;
     gap: 20px;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 22rem 1fr;
   }
 
   .title {
-    align-self: center;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .jsModifer {
