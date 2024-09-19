@@ -2,18 +2,16 @@ import React, { useRef, useState } from "react";
 import omLotus from "../../sounds/Om(Lotus).mp3";
 import style from "../Music/Music.module.css";
 
-export default function App() {
+export default function Player() {
     const audioPlayer = useRef();
+    const [triger, setTriger] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const [seekValue, setSeekValue] = useState(0);
 
 
-    const play = () => {
-        audioPlayer.current.play();
-    };
-
-    const pause = () => {
-        audioPlayer.current.pause();
+    const playPause = () => {
+        setTriger(!triger)
+        !triger ? audioPlayer.current.play() : audioPlayer.current.pause() 
     };
 
     const stop = () => {
@@ -41,8 +39,12 @@ export default function App() {
 
 
             <div className={style.player}>
-                <h3 className={style.trackTitle}>Om (Lotus)</h3>
-                <div className={style.track}>
+                <div className={style.trackTitle}>
+                    <span>S.i.O.D</span>    
+                    <span>Om (Lotus)</span>
+                    <span>11:52</span>
+                </div>
+                <div className={style.trackControls}>
                     <audio
                         src={omLotus}
                         ref={audioPlayer}
@@ -52,6 +54,22 @@ export default function App() {
                     </audio>
 
                     {/*<p>{currentTime}</p>*/}
+                    {/* Player*/}
+                    <div className={style.playerControls}>
+                        <button className={style.controlButton} onClick={playPause}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15">
+                                {
+                                   ! triger  ? <path d="M6.17 29.48l21.85 -11.43c1.26,-0.66 1.98,-1.77 1.98,-3.05 0,-1.28 -0.72,-2.39 -1.98,-3.05l-21.85 -11.43c-1.29,-0.68 -2.79,-0.69 -4.1,-0.04 -1.32,0.64 -2.07,1.77 -2.07,3.09l0 22.86c0,1.32 0.75,2.45 2.07,3.09 1.31,0.65 2.81,0.64 4.1,-0.04z"/> 
+                                            :  <path d="M1.2 0h7.6c.66 0 1.2.54 1.2 1.2v27.6c0 .66-.54 1.2-1.2 1.2H1.2A1.2 1.2 0 0 1 0 28.8V1.2C0 .54.54 0 1.2 0zM21 0h8a1 1 0 0 1 1 1v28a1 1 0 0 1-1 1h-8a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1z"/>
+                                }
+                            </svg>
+                        </button>
+                        <button className={style.controlButton} onClick={stop}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15">
+                                <rect width="30" height="30" rx="5" ry="5"/>
+                            </svg>
+                        </button>
+                    </div>
                     <input
                         type="range"
                         min="0"
@@ -64,19 +82,6 @@ export default function App() {
                             setSeekValue(e.target.value);
                         }}
                     />
-
-                    {/* Player*/}
-                    <div className={style.playerControls}>
-                        <button className={style.controlButton} onClick={play}>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20" height="20">
-                                <path
-                                    d="m9.54 5.38 13.95 7.27C24.45 13.15 25 14 25 15s-.55 1.85-1.51 2.35L9.54 24.62c-.96.51-2.07.51-3.03.01S5 23.27 5 22.27V7.73c0-1 .55-1.86 1.51-2.36.96-.5 2.07-.5 3.03.01z"/>
-                            </svg>
-                        </button>
-                        <button className={style.controlButton} onClick={pause}>||</button>
-                        <button className={style.controlButton} onClick={stop}>stop</button>
-                    </div>
-
                 </div>
             </div>
         </div>

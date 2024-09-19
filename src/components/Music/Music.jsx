@@ -11,7 +11,6 @@ export default class Music extends Component {
                     <h1 className="animate__animated animate__flipInX">Музыка</h1>
                 </div>
                 <div className={style.grid}>
-
                     <Player />
                 </div>
             </div>
