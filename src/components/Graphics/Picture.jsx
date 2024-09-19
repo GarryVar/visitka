@@ -15,7 +15,7 @@ export default class Picture extends Component  {
   render() {
       return (  
         
-        <div className={style.container}>
+        <figure className={style.container}>
                 <img 
                   className={style.picture} 
                   src={this.props.details.image}
@@ -37,8 +37,8 @@ export default class Picture extends Component  {
                 </div> */}
 
 
-          <p className={style.desc}>{this.props.details.desc}</p>
-        </div>
+          <figcaption className={style.desc}>{this.props.details.desc}</figcaption>
+        </figure>
       )
     }
   }
