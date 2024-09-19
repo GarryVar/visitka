@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.faa4e2ba.css",
-    "main.js": "./static/js/main.87dceb8b.js",
+    "main.css": "./static/css/main.79f70ab6.css",
+    "main.js": "./static/js/main.e5aa2612.js",
     "static/media/Om(Lotus).mp3": "./static/media/Om(Lotus).f50b8d51e38df9d76b22.mp3",
     "static/media/DelaGothicOne-Regular.woff": "./static/media/DelaGothicOne-Regular.9d02ec4e5c7d2693bf99.woff",
     "static/media/DelaGothicOne-Regular.woff2": "./static/media/DelaGothicOne-Regular.94ce7e496591f3c3e7bd.woff2",
@@ -20,11 +20,11 @@
     "static/media/thumb-tomahawk.webp": "./static/media/thumb-tomahawk.9748272f3ac8c90538d8.webp",
     "static/media/thumb-pie_cosmo_cake.webp": "./static/media/thumb-pie_cosmo_cake.0bafa28bc33e34d2a7ca.webp",
     "index.html": "./index.html",
-    "main.faa4e2ba.css.map": "./static/css/main.faa4e2ba.css.map",
-    "main.87dceb8b.js.map": "./static/js/main.87dceb8b.js.map"
+    "main.79f70ab6.css.map": "./static/css/main.79f70ab6.css.map",
+    "main.e5aa2612.js.map": "./static/js/main.e5aa2612.js.map"
   },
   "entrypoints": [
-    "static/css/main.faa4e2ba.css",
-    "static/js/main.87dceb8b.js"
+    "static/css/main.79f70ab6.css",
+    "static/js/main.e5aa2612.js"
   ]
 }
