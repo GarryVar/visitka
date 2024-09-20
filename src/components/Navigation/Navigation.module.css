@@ -22,32 +22,12 @@
     align-items: center;
     outline: none;
     width: fit-content;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 10px;
-    overflow: hidden;
 }
 
 .item:last-child {
     border-bottom: none;
 }
 
-/* .item:hover a,
-.item:focus a {
-    background-color: var(--hover);
-   
-} */
-
-/* .item:hover:before {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    left: 0;
-    top: 0;
-
-    background-color: var(--hyper-link);
-    z-index: 999;
-} */
 
 .link {
     text-transform: uppercase;

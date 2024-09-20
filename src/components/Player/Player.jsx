@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import omLotus from "../../sounds/Om(Lotus).mp3";
 import style from "../Music/Music.module.css";
+import siodLogo from "../../images/siod-logo-vector.png";
 
 export default function Player() {
     const audioPlayer = useRef();
@@ -17,6 +18,7 @@ export default function Player() {
     const stop = () => {
         audioPlayer.current.pause();
         audioPlayer.current.currentTime = 0;
+        setTriger(false);
     };
 
     const setSpeed = (speed) => {
@@ -28,13 +30,14 @@ export default function Player() {
         setSeekValue(
             (audioPlayer.current.currentTime / audioPlayer.current.duration) * 100
         );
+
     };
 
     return (
         <div className={style.wrapper}>
 
             <div className={style.cover}>
-                <img src="" alt=""/>
+                <img src={siodLogo} alt="siod logo"  />         
             </div>
 
 
@@ -53,7 +56,7 @@ export default function Player() {
                         <code>audio</code> element.
                     </audio>
 
-                    {/*<p>{currentTime}</p>*/}
+                    
                     {/* Player*/}
                     <div className={style.playerControls}>
                         <button className={style.controlButton} onClick={playPause}>
@@ -64,11 +67,13 @@ export default function Player() {
                                 }
                             </svg>
                         </button>
+
                         <button className={style.controlButton} onClick={stop}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="15" height="15">
                                 <rect width="30" height="30" rx="5" ry="5"/>
                             </svg>
                         </button>
+
                     </div>
                     <input
                         type="range"

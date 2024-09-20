@@ -28,7 +28,7 @@
 
 :root {
   --prymari: #edf2fa;
-    --prymari-dark: #53e078;
+    --prymari-dark: #8aba97;
     --prymari-white: rgb(255, 255, 255);
     --prymari-opacity1: rgba(151, 151, 151, 0.929);
     --gap: 20px;
@@ -202,6 +202,7 @@ code {
   background-color: var(--codeBg);
   border-radius: 5px;
 }
+
 
 @media(min-width: 620px) {
   .container {

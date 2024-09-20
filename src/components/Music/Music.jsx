@@ -1,6 +1,5 @@
 import { Component } from "react";
 import style from "./Music.module.css";
-import omLotus from "../../sounds/Om(Lotus).mp3";
 import Player from "../Player/Player";
 
 export default class Music extends Component {
@@ -10,7 +9,7 @@ export default class Music extends Component {
                 <div className="title">
                     <h1 className="animate__animated animate__flipInX">Музыка</h1>
                 </div>
-                <div className={style.grid}>
+                <div className={`${style.grid} animate__animated animate__fadeIn`}>
                     <Player />
                 </div>
             </div>
