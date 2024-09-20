@@ -33,7 +33,7 @@
     --prymari-opacity1: rgba(151, 151, 151, 0.929);
     --gap: 20px;
     --system: #f1f3f4;
-    --border-prymari: var(--prymari-dark);
+    --border-prymari: #bebebe;
     --warm: rgb(229, 211, 181);
     --hover: #2c467c;
     --orange: rgb(255 157 48);
@@ -133,6 +133,10 @@ figure {
   margin: 10px;
 
   box-shadow: 15px 13px black;
+}
+
+.cotent {
+  height: 100%;
 }
 
 

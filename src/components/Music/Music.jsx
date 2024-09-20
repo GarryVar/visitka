@@ -2,6 +2,8 @@ import { Component } from "react";
 import style from "./Music.module.css";
 import Player from "../Player/Player";
 
+
+
 export default class Music extends Component {
     render () {
         return (
@@ -10,7 +12,9 @@ export default class Music extends Component {
                     <h1 className="animate__animated animate__flipInX">Музыка</h1>
                 </div>
                 <div className={`${style.grid} animate__animated animate__fadeIn`}>
-                    <Player />
+                    {
+                        this.props.tracks.map(track => <Player track={track}/>)
+                    }
                 </div>
             </div>
         )

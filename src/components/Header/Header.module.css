@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   grid-area: header;
-  background-color: var(--prymari-dark);
+  background-image: linear-gradient(145deg, var(--prymari-dark), var(--nodejs));
   z-index: 120;
 }
 

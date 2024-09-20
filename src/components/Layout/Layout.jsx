@@ -85,7 +85,11 @@ export default class Layout extends Component {
 
                             <Route
                                 path="/music"
-                                element={<Music />}>
+                                element={
+                                            <Music 
+                                                tracks={this.props.tracks}
+                                            />
+                                        }>
 
                             </Route>
 

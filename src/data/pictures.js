@@ -8,6 +8,8 @@ import redEyes from "../images/red_eyes_totem.webp";
 import thumbRedEyes from "../images/thumb-red_eyes_totem.webp";
 import tomahawk from "../images/tomahawk.webp";
 import thumbTomahawk from "../images/thumb-tomahawk.webp";
+import siodLogo from "../images/siod-logo-vector.webp";
+import thumbSiodLogo from "../images/thumb-siod-logo-vector.webp";
 
 
 export const pictures = [
@@ -94,5 +96,22 @@ export const pictures = [
       subtitle: "Логотип в индейской тематике",
       desc: "Вымышленый логотип звукозаписывающей студии Tomahawk records",
       key: "xKi8ag6Nb1",
+    },
+
+    {
+      image: siodLogo,
+      thumb: thumbSiodLogo,
+      bigWidth: "800",
+      bigHeight: "800",
+      wide: true,
+      width: "280",
+      height: "280",
+      thumbWidth: "180",
+      thumbHeight: "180",
+      showBig: false,
+      title: "S.i.O.D",
+      subtitle: "Логотип в индейской тематике",
+      desc: "S.i.O.D некогда музыкально - творческий проект объединяющий в себя создание музыки, диджеинг, организацию тематических вечеринок вечеринок.",
+      key: "r90cH3mjU8",
     },
 ];
