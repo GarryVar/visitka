@@ -3,13 +3,14 @@ import style from "../Music/Music.module.css";
 
 
 export default function Player(props) {
+
+    const {track, artist, trackTitle, durationMin, durationSec, cover} = props.track;
+
     const audioPlayer = useRef();
     const [triger, setTriger] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const [seekValue, setSeekValue] = useState(0);
 
-
-    const {track, artist, trackTitle, durationMin, durationSec, cover} = props.track;
 
     const playPause = () => {   
         setTriger(!triger)
@@ -37,7 +38,7 @@ export default function Player(props) {
         <div className={style.wrapper}>
 
             <div className={style.cover}>
-                <img src={cover} alt="siod logo"  />         
+                <img src={cover} alt="logo"  />         
             </div>
 
 

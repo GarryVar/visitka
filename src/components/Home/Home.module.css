@@ -50,16 +50,17 @@
   font-size: 40px;
   position: relative;
   padding: 5px;
-  color: var(--text-color);
+  color: var(--system);
   text-align: center;
 }
 
 .text {
   margin-top: 10px;
-  color: var(--text-color);
-  background-color: var(--prymari-white);
   padding: 18px;
-  border: 1px solid var(--border-prymari);
+
+  color: var(--text-color);
+  background-color: var(--prymari-opacity1);
+  border-radius: 10px;
 }
 
 .text:first-child {

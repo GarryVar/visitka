@@ -18,7 +18,8 @@ export default class Layout extends Component {
         this.onShowAllPictures = this.onShowAllPictures.bind(this);    
         this.onShowWidePictures = this.onShowWidePictures.bind(this);
         this.onShowNormalPictures = this.onShowNormalPictures.bind(this);
-        this.onShowCroll= this.onShowCroll.bind(this);
+        this.hideNavMenu = this.hideNavMenu.bind(this);
+        this.onShowCroll = this.onShowCroll.bind(this);
 
 
         this.state = {
@@ -50,6 +51,10 @@ export default class Layout extends Component {
         }
     }
 
+    hideNavMenu () {
+        this.state.menuVisible && this.setState(state => ({menuVisible: !state.menuVisible}))
+    }
+
     getDetail (key) {
         return this.state.pictures.find(i => i.key === key);
     }
@@ -66,11 +71,14 @@ export default class Layout extends Component {
                 
 
                     <Header
+                        hideNavMenu={this.hideNavMenu}
                         menuVisible={this.state.menuVisible}
                         onShowNavMenu={this.onShowNavMenu}
                     />
 
-                    <main className={style.main} onScroll={this.onShowCroll.bind(this)}>
+                    <main 
+                        className={style.main} 
+                        onScroll={this.onShowCroll.bind(this)}>
                         
                         <Routes>
                             <Route

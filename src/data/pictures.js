@@ -10,6 +10,8 @@ import tomahawk from "../images/tomahawk.webp";
 import thumbTomahawk from "../images/thumb-tomahawk.webp";
 import siodLogo from "../images/siod-logo-vector.webp";
 import thumbSiodLogo from "../images/thumb-siod-logo-vector.webp";
+import ufo from "../images/ufo.webp";
+import thumbUfo from "../images/thumb_ufo_design.webp";
 
 
 export const pictures = [
@@ -25,7 +27,7 @@ export const pictures = [
       thumbHeight: "180",
       title: "Hockey club Wigwams",
       subtitle: "Логотип вымышленной хоккейной команды Hockey Club Wigwams",
-      desc: "Все элементы логотипа отрисованы с нуля. Красивый и выдержаный дизайн логотипа вполне соответствует своему хокейному характеру. Да и просто, получился красивый :)",
+      desc: "Красивый и выдержаный дизайн логотипа вполне, соответствует своему хоккейному характеру. Да и просто, получился красивый :)",
       showBig: false,
       key: "Ku6oMu7P0o",
     },
@@ -41,8 +43,8 @@ export const pictures = [
       thumbWidth: "180",
       thumbHeight: "180",
       title: "Cosmo cake",
-      subtitle: "Это баннер, логотип для автомоки",
-      desc: "Это выдуманый логотип космически вкусного коктейля. Свежесть и прохлада космоса в вашем коктейле",
+      subtitle: "Логотип вкусного космического котейля с пироженым",
+      desc: "Это просто космически вкусный коктейль с пироженым. Свежесть и прохлада космоса.",
       showBig: false,
       key: "pL9kmJY14T",
     },
@@ -77,7 +79,7 @@ export const pictures = [
       showBig: false,
       title: "Red Eyes Totem",
       subtitle: "Красноглазый тотем логотип.",
-      desc: "Red Eyes Totem мой музыкаьлный проект, в стиле шаманского эмбиента и трайбла с психоделическим звучанием, с невероятно гипнотической и атмосферой, которая переносит вас в состояния шаманского транса. трека",
+      desc: "Red Eyes Totem мой музыкаьлный проект, в стиле шаманского эмбиента и трайбла с психоделическим звучанием, с невероятно гипнотической атмосферой, которая переносит вас в состояния шаманского транса.",
       key: "hs9N634VFg",
     },
 
@@ -94,7 +96,7 @@ export const pictures = [
       showBig: false,
       title: "Tomahawk",
       subtitle: "Логотип в индейской тематике",
-      desc: "Вымышленый логотип звукозаписывающей студии Tomahawk records",
+      desc: "Вымышленый логотип звукозаписывающей студии Tomahawk records.",
       key: "xKi8ag6Nb1",
     },
 
@@ -111,7 +113,24 @@ export const pictures = [
       showBig: false,
       title: "S.i.O.D",
       subtitle: "Логотип в индейской тематике",
-      desc: "S.i.O.D некогда музыкально - творческий проект объединяющий в себя создание музыки, диджеинг, организацию тематических вечеринок вечеринок.",
+      desc: "S.i.O.D некогда музыкально - творческий проект объединяющий в себя создание музыки, диджеинг, организацию тематических вечеринок.",
       key: "r90cH3mjU8",
     },
+
+    {
+    image: ufo,
+    thumb: thumbUfo,
+    bigWidth: "800",
+    bigHeight: "800",
+    wide: true,
+    width: "280",
+    height: "280",
+    thumbWidth: "180",
+    thumbHeight: "180",
+    showBig: false,
+    title: "Ufo",
+    subtitle: "Летающая тарелка на фоне ночных пирамид",
+    desc: "Летающая тарелка на фоне ночных гор, пирамид, звёздного неба и луны.",
+    key: "d62mсUiq6H",
+  },
 ];

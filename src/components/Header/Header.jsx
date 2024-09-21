@@ -17,7 +17,8 @@ export default class Header extends Component {
               {/* <img src="../../public/images/visitka-logo.svg" alt="My avatar sorry..."  width="100" height="100"/> */}
             </Link>
           </div>
-            <Navigation  
+            <Navigation
+              hideNavMenu={this.props.hideNavMenu}
               menuVisible={this.props.menuVisible} />
 
           <button
