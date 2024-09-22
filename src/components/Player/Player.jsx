@@ -10,6 +10,10 @@ export default function Player(props) {
     const [triger, setTriger] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const [seekValue, setSeekValue] = useState(0);
+    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(0);
+    const [durationMinutes, setDurationMinutes] = useState('11');
+    const [durationSeconds, setDurationSeconds] = useState('52');
 
 
     const playPause = () => {   
@@ -29,9 +33,15 @@ export default function Player(props) {
 
     const onPlaying = () => {
         setCurrentTime(audioPlayer.current.currentTime);
-        setSeekValue(
-            (audioPlayer.current.currentTime / audioPlayer.current.duration) * 100
-        );
+        setSeekValue((audioPlayer.current.currentTime / audioPlayer.current.duration) * 100);
+
+
+        setMinutes(Math.floor(audioPlayer.current.currentTime / 60));
+        setSeconds(Math.floor(audioPlayer.current.currentTime % 60));
+
+
+        setDurationSeconds(Math.floor(audioPlayer.current.duration - currentTime) % 60);
+        setDurationMinutes(Math.floor(audioPlayer.current.duration - audioPlayer.current.currentTime) / 60)
     };
 
     return (
@@ -41,12 +51,10 @@ export default function Player(props) {
                 <img src={cover} alt="logo"  />         
             </div>
 
-
             <div className={style.player}>
                 <div className={style.trackTitle}>
                     <span>{ artist }</span>    
                     <span>{ trackTitle }</span>
-                    <span>{`${durationMin} : ${durationSec}`}</span>
                 </div>
                 <div className={style.trackControls}>
                     <audio
@@ -58,6 +66,13 @@ export default function Player(props) {
                     </audio>
 
                     <div className={style.playerControls}>
+                    <span className={style.playerTimer}>
+                        {
+                        `${Math.floor(minutes)} : ${Math.floor(seconds)}`
+                        }
+                    </span>
+
+                    <div className={style.playerControlButton}>
                         <button className={style.controlButton} onClick={playPause}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20" height="20">
                                 {
@@ -72,14 +87,15 @@ export default function Player(props) {
                                 <rect width="30" height="30" rx="5" ry="5"/>
                             </svg>
                         </button>
-
+                    </div>
+                    <span className={style.playerTimer}>{`-${Math.floor(durationMinutes)} : ${durationSeconds}`}</span>
                     </div>
                     <input
                         type="range"
                         min="0"
                         max="100"
                         step="1"
-                        value={seekValue}
+                        value={Math.floor(seekValue)}
                         onChange={(e) => {
                         
                             const seekto = audioPlayer.current.duration * (+e.target.value / 100);

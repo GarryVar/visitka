@@ -69,12 +69,19 @@
     width: 100%;
 }
 
-
 .playerControls {
     display: grid;
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    grid-template-columns: min-content min-content min-content;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.playerTimer,
+.playerControlButton {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
 }
 
 .controlButton {

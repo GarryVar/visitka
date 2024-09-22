@@ -236,9 +236,14 @@ code {
 
 @media(min-width: 920px) {
   body {
-    background-position-x: 30%, 110%, 100%, 100%;
-    background-position-y: 1% , 200%, -20%, 100%;
-    background-size: 30%, 40%, 20%, 100%;
+    background-position-x: -4%, 110%, 100%, 100%;
+    background-position-y: 67%, 133%, -21%, 100%;
+    background-size: 27%, 26%, 20%, 100%;
+  }
+
+  .content {
+    margin: auto;
+    max-width: 920px;
   }
 
   .subtitle {

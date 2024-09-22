@@ -53,24 +53,15 @@
 }
 
 @media(min-width: 620px) {
-  .page {
-    padding: 10px;
-  }
-
   .picture {
     width: 280px;
     height: min-content;
     border-radius: 10px;
     overflow: hidden;
   }
-
 }
 
   @media (min-width: 1200px) {
-    .page {
-      width: 920px;
-    }
-
     .picture {
       width: 320px;
     }

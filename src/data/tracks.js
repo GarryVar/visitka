@@ -7,7 +7,7 @@ export const tracks = [
     artist: "S.i.O.D",
     trackTitle: "Om (Lotus)",
     durationMin: 11,
-    durationSec: 52,
+    durationSec: 54,
     cover: siodLogo,
   },
 ];
