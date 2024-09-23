@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 
 
 export default function Player(props) {
-    const {track, artist, trackTitle, cover, durationMin, durationSec, artistLinkDiscogs} = props.track;
+    const {track, artist, trackTitle, cover, durationMin, durationSec, artistLinkDiscogs, released} = props.track;
+    console.log(released)
 
     const audioPlayer = useRef();
 
@@ -46,7 +47,7 @@ export default function Player(props) {
 
 
     return (
-        <div className={style.wrapper}>
+        <div className={ released ? (style.wrapper, style.wrapperReleased) : style.wrapperUnreleased }>
 
             <div className={style.cover}>
                 <img src={cover} alt="logo" width="280" height="280"  />
@@ -55,7 +56,7 @@ export default function Player(props) {
             <div className={style.player}>
                 <div className={style.trackTitle}>
                     <span className={style.artist}>
-                        <Link to={artistLinkDiscogs}>{artist}</Link>
+                        <Link to={artistLinkDiscogs} target="_blank">{artist}</Link>
                     </span>
                     <span>{ trackTitle }</span>
                 </div>

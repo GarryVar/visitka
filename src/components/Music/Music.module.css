@@ -4,7 +4,9 @@
 }
 
 
-.wrapper {
+.wrapper,
+.wrapperUnreleased,
+.wrapperReleased {
     position: relative;
 
     display: grid;
@@ -22,6 +24,25 @@
     background-color: var(--prymari-opacity1);
 
     overflow: hidden;
+}
+
+.wrapperUnreleased::before,
+.wrapperReleased::before{
+    opacity: 1;
+    content: 'Unreleased';
+    position: absolute;
+    background-color: var(--git);
+    color: var(--js);
+    padding: 4px;
+    right: 0;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.wrapperReleased::before {
+    content: 'Released';
+    background-color: var(--js);
+    color: var(--prymari-dark);
 }
 
 .grid {
