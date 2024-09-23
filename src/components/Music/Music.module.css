@@ -56,10 +56,10 @@
 
 .trackTitle {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between ;
     align-items: center;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .player {
@@ -70,25 +70,26 @@
 }
 
 .playerControls {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
+    display: flex;
+
+    justify-content: space-between;
     align-items: center;
     column-gap: 10px;
 }
 
-.playerTimer,
+.playerTimer{
+    font-size: 16px;
+}
+
 .playerControlButton {
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .controlButton {
     display: grid;
     justify-items: center;
     align-content: center;
-
     width: 30px;
     height: 30px;
     border: none;

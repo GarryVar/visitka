@@ -3,10 +3,10 @@ import style from "../Music/Music.module.css";
 
 
 export default function Player(props) {
-
     const {track, artist, trackTitle, durationMin, durationSec, cover} = props.track;
 
     const audioPlayer = useRef();
+
     const [triger, setTriger] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const [seekValue, setSeekValue] = useState(0);
@@ -14,7 +14,6 @@ export default function Player(props) {
     const [seconds, setSeconds] = useState(0);
     const [durationMinutes, setDurationMinutes] = useState('11');
     const [durationSeconds, setDurationSeconds] = useState('52');
-
 
     const playPause = () => {   
         setTriger(!triger)
@@ -32,17 +31,18 @@ export default function Player(props) {
     };
 
     const onPlaying = () => {
+        let duration = audioPlayer.current.duration;
+
         setCurrentTime(audioPlayer.current.currentTime);
         setSeekValue((audioPlayer.current.currentTime / audioPlayer.current.duration) * 100);
-
 
         setMinutes(Math.floor(audioPlayer.current.currentTime / 60));
         setSeconds(Math.floor(audioPlayer.current.currentTime % 60));
 
-
-        setDurationSeconds(Math.floor(audioPlayer.current.duration - currentTime) % 60);
-        setDurationMinutes(Math.floor(audioPlayer.current.duration - audioPlayer.current.currentTime) / 60)
+        setDurationMinutes(Math.floor(duration - audioPlayer.current.currentTime) / 60);
+        setDurationSeconds(Math.floor(duration - currentTime) % 60);
     };
+
 
     return (
         <div className={style.wrapper}>
@@ -68,7 +68,16 @@ export default function Player(props) {
                     <div className={style.playerControls}>
                     <span className={style.playerTimer}>
                         {
-                        `${Math.floor(minutes)} : ${Math.floor(seconds)}`
+                            `${
+                                 Math.floor(minutes) < 10 ? 
+                                '0' +  Math.floor(minutes) :
+                                 Math.floor(minutes) 
+                            }
+                            : ${
+                                Math.floor(seconds) < 10 ? 
+                                '0' + Math.floor(seconds) :
+                                Math.floor(seconds)
+                            }`
                         }
                     </span>
 
@@ -88,7 +97,17 @@ export default function Player(props) {
                             </svg>
                         </button>
                     </div>
-                    <span className={style.playerTimer}>{`-${Math.floor(durationMinutes)} : ${durationSeconds}`}</span>
+                    <span className={style.playerTimer}>
+                        {
+                            `-${
+                                Math.floor(durationMinutes) < 10 ? 
+                                '0' + Math.floor(durationMinutes): 
+                                Math.floor(durationMinutes)} 
+                                : 
+                                ${durationSeconds < 10 ? '0' + durationSeconds: durationSeconds}
+                            `
+                        }
+                    </span>
                     </div>
                     <input
                         type="range"
