@@ -1,9 +1,10 @@
 import React, { useRef, useState } from "react";
 import style from "../Music/Music.module.css";
+import {Link} from "react-router-dom";
 
 
 export default function Player(props) {
-    const {track, artist, trackTitle, cover} = props.track;
+    const {track, artist, trackTitle, cover, durationMin, durationSec, artistLinkDiscogs} = props.track;
 
     const audioPlayer = useRef();
 
@@ -12,8 +13,8 @@ export default function Player(props) {
     const [seekValue, setSeekValue] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
-    const [durationMinutes, setDurationMinutes] = useState('11');
-    const [durationSeconds, setDurationSeconds] = useState('52');
+    const [durationMinutes, setDurationMinutes] = useState(durationMin);
+    const [durationSeconds, setDurationSeconds] = useState(durationSec);
 
     const playPause = () => {   
         setTriger(!triger)
@@ -48,12 +49,14 @@ export default function Player(props) {
         <div className={style.wrapper}>
 
             <div className={style.cover}>
-                <img src={cover} alt="logo"  />         
+                <img src={cover} alt="logo" width="280" height="280"  />
             </div>
 
             <div className={style.player}>
                 <div className={style.trackTitle}>
-                    <span>{ artist }</span>    
+                    <span className={style.artist}>
+                        <Link to={artistLinkDiscogs}>{artist}</Link>
+                    </span>
                     <span>{ trackTitle }</span>
                 </div>
                 <div className={style.trackControls}>

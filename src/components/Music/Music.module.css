@@ -16,6 +16,7 @@
     justify-items: center; 
 
     padding: 10px;
+    width: 300px;
 
     border-radius: 10px;
     background-color: var(--prymari-opacity1);
@@ -37,9 +38,11 @@
 .cover {
     width: 280px;
     height: 280px;
-    border-radius: 50%;
+    border-radius: 10px;
     grid-column: 1 / -1;
     grid-area: cover;
+    border-right: 10px;
+    overflow: hidden;
 
     /* background-color: var(--prymari-dark); */
 }
@@ -63,6 +66,17 @@
     font-size: 16px;
     border-bottom: 4px double var(--text-color);
     padding-bottom: 10px;
+}
+
+.artist a {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.artist a:hover {
+    color: var(--prymari-white);
 }
 
 .player {
@@ -111,4 +125,10 @@
 
 input[type="range"] {
     accent-color: var(--prymari-dark);
+}
+
+@media(min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
 }
