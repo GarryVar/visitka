@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.27770d9c.css",
-    "main.js": "./static/js/main.588a290b.js",
+    "main.css": "./static/css/main.c21f5488.css",
+    "main.js": "./static/js/main.d0c0693a.js",
     "static/media/siod_om_lotus.mp3": "./static/media/siod_om_lotus.64f39e42dbaca24fe28d.mp3",
     "static/media/DelaGothicOne-Regular.woff": "./static/media/DelaGothicOne-Regular.9d02ec4e5c7d2693bf99.woff",
     "static/media/DelaGothicOne-Regular.woff2": "./static/media/DelaGothicOne-Regular.94ce7e496591f3c3e7bd.woff2",
@@ -23,15 +23,15 @@
     "static/media/thumb-tomahawk.webp": "./static/media/thumb-tomahawk.9748272f3ac8c90538d8.webp",
     "static/media/thumb_ufo_design.webp": "./static/media/thumb_ufo_design.5fda7d8a60e4fbefb05e.webp",
     "static/media/thumb-pie_cosmo_cake.webp": "./static/media/thumb-pie_cosmo_cake.0bafa28bc33e34d2a7ca.webp",
-    "static/media/stars-set-1.svg": "./static/media/stars-set-1.bf48aefb6ba926f14997.svg",
-    "static/media/stars-set-2.svg": "./static/media/stars-set-2.895713b24b984f298571.svg",
+    "static/media/stars-set-1.svg": "./static/media/stars-set-1.8b0305029227ad6fad9c.svg",
+    "static/media/stars-set-2.svg": "./static/media/stars-set-2.2b711160a0535bdbafb0.svg",
     "static/media/ufo-ship.svg": "./static/media/ufo-ship.9e996a4fec4955b8e8d0.svg",
     "index.html": "./index.html",
-    "main.27770d9c.css.map": "./static/css/main.27770d9c.css.map",
-    "main.588a290b.js.map": "./static/js/main.588a290b.js.map"
+    "main.c21f5488.css.map": "./static/css/main.c21f5488.css.map",
+    "main.d0c0693a.js.map": "./static/js/main.d0c0693a.js.map"
   },
   "entrypoints": [
-    "static/css/main.27770d9c.css",
-    "static/js/main.588a290b.js"
+    "static/css/main.c21f5488.css",
+    "static/js/main.d0c0693a.js"
   ]
 }
