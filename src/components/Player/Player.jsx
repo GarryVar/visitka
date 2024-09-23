@@ -3,7 +3,7 @@ import style from "../Music/Music.module.css";
 
 
 export default function Player(props) {
-    const {track, artist, trackTitle, durationMin, durationSec, cover} = props.track;
+    const {track, artist, trackTitle, cover} = props.track;
 
     const audioPlayer = useRef();
 

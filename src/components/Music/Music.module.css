@@ -71,14 +71,18 @@
 
 .playerControls {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-    column-gap: 10px;
 }
 
-.playerTimer{
+.playerTimer {
+    width: 100%;
     font-size: 16px;
+    text-align: left;
+}
+
+.playerTimer:nth-child(3) {
+    text-align: right;
 }
 
 .playerControlButton {
