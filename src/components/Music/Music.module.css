@@ -12,14 +12,15 @@
             "cover cover cover"
             "player player player";
     grid-template-columns: 1fr 1fr 1fr;
-
     row-gap: 10px;
-
     justify-items: center; 
-    width: 280px;
+
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: var(--prymari-opacity1);
 
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .grid {
@@ -60,10 +61,13 @@
     align-items: center;
     text-align: center;
     font-size: 16px;
+    border-bottom: 4px double var(--text-color);
+    padding-bottom: 10px;
 }
 
 .player {
     display: grid;
+    row-gap: 10px;
     grid-area: player;
     padding-top: 0;
     width: 100%;
