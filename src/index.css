@@ -28,7 +28,7 @@
 
 :root {
   --prymari: #edf2fa;
-    --prymari-dark: #8aba97;
+    --prymari-dark: rgb(138, 186, 151);
     --prymari-white: rgb(255, 255, 255);
     --prymari-opacity1: rgba(255, 255, 255, 0.329);
     --gap: 20px;
@@ -45,8 +45,6 @@
     --codeBg: black;
     --bg-color: #211c1c;
     --text-color: #211c1c;
-
-  height: 100%; 
 }
 
 *,
@@ -67,7 +65,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: inherit;
+  min-height: 100vh;
   font-weight: 400;
   color: var(--text-color);
   background-image:
