@@ -230,6 +230,10 @@ code {
   .subtitle  {
     font-size: 16px;
   }
+
+  .active {
+    padding: 10px;
+  }
 }
 
 @media(min-width: 920px) {
@@ -251,6 +255,10 @@ code {
     padding-bottom: 0;
     font-size: 20px;
     color: var(--border-prymari);
+  }
+
+  .active {
+    padding-left: 70px;
   }
 }
 

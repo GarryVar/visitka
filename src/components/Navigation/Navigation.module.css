@@ -11,10 +11,8 @@
 
 .menu {
     margin: 0;
-    padding: 0;
-    padding-bottom: 20px;
+    padding: 0 0 20px;
     list-style: none;
-    background-color: var(--prymari-opacity1);
     border-radius: 20px;
 }
 
@@ -40,8 +38,8 @@
     padding: calc(var(--gap) / 2);
     padding-left: 30px;
     width: 100%;
-    color: var(--system);
-    font-size: 14px;
+    color: var(--prymari-white);
+    font-size: 12px;
     letter-spacing: 1px;
 
     text-decoration: underline;
@@ -51,8 +49,7 @@
 
 }
 
-.link:hover,
-.link:focus {
+.link:hover {
     color: var(--text-color);
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -66,7 +63,7 @@
     .menu {
         padding: 0;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .nav {
@@ -78,19 +75,19 @@
 
     .navHidden {
         display: block;
-        padding: 20px;
     }
 
     .item {
         padding: 0;
     }
 
-    .link:hover {
-        padding-left: none;
+    .link {
+        padding: 10px;
+        justify-content: start;
     }
 
-    .link {
-        justify-content: start;
+    .link:hover {
+        padding-left: 10px;
     }
 
 }
@@ -99,5 +96,20 @@
     .nav {
         grid-column: 1 / -1;
         grid-row: 2;
-    }   
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .link {
+        color: var(--prymari-white);
+        padding: calc(var(--gap) / 2);
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    .link:hover {
+        padding-left: 70px;
+    }
 }
