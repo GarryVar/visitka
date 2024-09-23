@@ -18,8 +18,7 @@ export default class Layout extends Component {
         this.onShowAllPictures = this.onShowAllPictures.bind(this);    
         this.onShowWidePictures = this.onShowWidePictures.bind(this);
         this.onShowNormalPictures = this.onShowNormalPictures.bind(this);
-        this.onShowCroll= this.onShowCroll.bind(this);
-
+        this.hideNavMenu = this.hideNavMenu.bind(this);
 
         this.state = {
             menuVisible: false,
@@ -27,51 +26,57 @@ export default class Layout extends Component {
         }
     }
 
+    shwoThis () {
+        console.log(this.props.children);
+    };
+
     onShowAllPictures () {
         let allPictures = this.props.pictures.filter(picture => picture)
         this.setState(state => ({pictures: allPictures}))
-    }
+    };
 
     onShowWidePictures () {
         let widePictures = this.props.pictures.filter(i => !i.wide)
         this.setState(state => ({pictures: widePictures}))
-    }
+    };
 
     onShowNormalPictures () {
         // debugger;
         let normalPictures = this.props.pictures.filter(i => i.wide === true);
         this.setState(state => ({pictures: normalPictures}))
-    }
+    };
     
     onShowNavMenu (e) {
+
         let btn = e.currentTarget;
         if (btn.localName === 'button') {
             this.setState(state => ({menuVisible: !state.menuVisible}))
         }
-    }
+    };
+
+    hideNavMenu () {
+        this.state.menuVisible && this.setState(state => ({menuVisible: !state.menuVisible}))
+    };
 
     getDetail (key) {
         return this.state.pictures.find(i => i.key === key);
-    }
-
-    onShowCroll (e) {
-        console.log(this.scrollTop)
-    }
-
+    };
+    
     render() {
         return (
             
             <HashRouter>
                 <div className={style.layout}>
                 
-
                     <Header
+                        hideNavMenu={this.hideNavMenu}
                         menuVisible={this.state.menuVisible}
                         onShowNavMenu={this.onShowNavMenu}
                     />
 
-                    <main className={style.main} onScroll={this.onShowCroll.bind(this)}>
-                        
+                    <main 
+                        className={style.main}
+                    >    
                         <Routes>
                             <Route
                                 path="/"

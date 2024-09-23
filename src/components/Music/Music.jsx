@@ -13,7 +13,10 @@ export default class Music extends Component {
                 </div>
                 <div className={`${style.grid} animate__animated animate__fadeIn`}>
                     {
-                        this.props.tracks.map(track => <Player track={track}/>)
+                        this.props.tracks.map(track =>
+                            <Player track={track}
+                                    key={track.artistLinkDiscogs.replace(/\D/g, "")}
+                            />)
                     }
                 </div>
             </div>

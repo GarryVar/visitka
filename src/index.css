@@ -28,25 +28,23 @@
 
 :root {
   --prymari: #edf2fa;
-    --prymari-dark: #8aba97;
+    --prymari-dark: rgb(138, 186, 151);
     --prymari-white: rgb(255, 255, 255);
-    --prymari-opacity1: rgba(151, 151, 151, 0.929);
+    --prymari-opacity1: rgba(255, 255, 255, 0.329);
     --gap: 20px;
     --system: #f1f3f4;
     --border-prymari: #bebebe;
     --warm: rgb(229, 211, 181);
     --hover: #2c467c;
     --orange: rgb(255 157 48);
-    --hyper-link: rgb(86, 137, 213);
+    --hyper-link: #00205f;
     --css: #1d4492;
     --js: #ffd829;
     --git: #f14e32;
     --nodejs: #7cb602;
     --codeBg: black;
-    --bg-color: hsl(0deg 0% 100%);
-    --text-color: #242a33e0;
-
-  height: 100%; 
+    --bg-color: #211c1c;
+    --text-color: #211c1c;
 }
 
 *,
@@ -62,14 +60,24 @@
 
 body {
   margin: 0;
+  padding: 0 0 20px 0;
   font-family: 'Dela Gothic One', 'Press Start 2P', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: inherit;
+  min-height: 100vh;
   font-weight: 400;
   color: var(--text-color);
+  background-image:
+      url(./images/stars-set-1.svg), 
+      url(./images/stars-set-2.svg),
+      url(./images/stars-set-1.svg),  
+      linear-gradient(10deg, var(--prymari-dark), var(--hover));
+    background-repeat: no-repeat;
+    background-position-y: 30%, 72%, 5%, 100%;
+    background-size: 80%, 80%, 60%, 100%;
+    background-position-x: 115%, -26%, -10%, 100%;
 }
 
 h1,
@@ -81,7 +89,6 @@ h6 {
   font-weight: normal;
   margin: 0;
   padding: 0;
-  color: var(--text-color);
 }
 
 img {
@@ -120,7 +127,7 @@ figure {
 .active {
   position: relative;
   padding-left: 70px;
-  color: white;
+  color: var(--git);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
@@ -164,7 +171,7 @@ figure {
 .subtitle {
   min-height: 100px;
   top: 0;
-  color: var(--text-color);
+  color: var(--system);
 }
 
 .title {
@@ -178,7 +185,7 @@ figure {
   font-size: 18px;
   text-transform: uppercase;
 
-  border-bottom: 6px double var(--text-color);
+  border-bottom: 6px double var(--system);
 }
 
 .subtitle {
@@ -209,6 +216,10 @@ code {
 
 
 @media(min-width: 620px) {
+  body {
+    background-position-y: 10%, 117%, 23%, 100%;
+    background-size: 25%, 40%, 30%, 100%;
+  }
   .container {
     grid-template-columns: min-content auto;
   }
@@ -220,9 +231,24 @@ code {
   .subtitle  {
     font-size: 16px;
   }
+
+  .active {
+    padding: 10px;
+  }
 }
 
 @media(min-width: 920px) {
+  body {
+    background-position-x: -4%, 110%, 100%, 100%;
+    background-position-y: 67%, 133%, -21%, 100%;
+    background-size: 27%, 26%, 20%, 100%;
+  }
+
+  .content {
+    margin: auto;
+    max-width: 920px;
+  }
+
   .subtitle {
     height: 92px;
     margin-bottom: 0;
@@ -230,6 +256,10 @@ code {
     padding-bottom: 0;
     font-size: 20px;
     color: var(--border-prymari);
+  }
+
+  .active {
+    padding-left: 70px;
   }
 }
 

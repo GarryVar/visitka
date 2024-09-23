@@ -1,4 +1,5 @@
 .layout {
+    position: relative;
     display: grid;
 
     grid-template-columns: 1fr;
@@ -7,7 +8,6 @@
         'header'
         'main';
     height: inherit;
-
 }
 
 .inner {
@@ -21,7 +21,8 @@
     min-height: 320px;
     border-bottom: none;
     overflow: auto;
-    background-color: var(--system);
+    /* background-color: var(--system); */
+    /* background-image:  linear-gradient(10deg, var(--prymari-dark), var(--hover));    */
 }
 
 .footer {

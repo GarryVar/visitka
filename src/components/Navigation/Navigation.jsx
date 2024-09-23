@@ -35,6 +35,7 @@ export default class Navigation extends Component {
                         menuItemsData.map(({textContent, link}, indx) =>
                             <li className={style.item} key={indx}>
                                 <NavLink
+                                    onClick={this.props.hideNavMenu}
                                     to={link} 
                                     className={({isActive}) => `${style.link} ${( isActive ? ' active' : '')}`}>
                                     

@@ -1,15 +1,21 @@
 import React, { useRef, useState } from "react";
 import style from "../Music/Music.module.css";
+import {Link} from "react-router-dom";
 
 
 export default function Player(props) {
+    const {track, artist, trackTitle, cover, durationMin, durationSec, artistLinkDiscogs, released} = props.track;
+    console.log(released)
+
     const audioPlayer = useRef();
+
     const [triger, setTriger] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
     const [seekValue, setSeekValue] = useState(0);
-
-
-    const {track, artist, trackTitle, durationMin, durationSec, cover} = props.track;
+    const [minutes, setMinutes] = useState(0);
+    const [seconds, setSeconds] = useState(0);
+    const [durationMinutes, setDurationMinutes] = useState(durationMin);
+    const [durationSeconds, setDurationSeconds] = useState(durationSec);
 
     const playPause = () => {   
         setTriger(!triger)
@@ -27,25 +33,32 @@ export default function Player(props) {
     };
 
     const onPlaying = () => {
+        let duration = audioPlayer.current.duration;
+
         setCurrentTime(audioPlayer.current.currentTime);
-        setSeekValue(
-            (audioPlayer.current.currentTime / audioPlayer.current.duration) * 100
-        );
+        setSeekValue((audioPlayer.current.currentTime / audioPlayer.current.duration) * 100);
+
+        setMinutes(Math.floor(audioPlayer.current.currentTime / 60));
+        setSeconds(Math.floor(audioPlayer.current.currentTime % 60));
+
+        setDurationMinutes(Math.floor(duration - audioPlayer.current.currentTime) / 60);
+        setDurationSeconds(Math.floor(duration - currentTime) % 60);
     };
 
+
     return (
-        <div className={style.wrapper}>
+        <div className={ released ? (style.wrapper, style.wrapperReleased) : style.wrapperUnreleased }>
 
             <div className={style.cover}>
-                <img src={cover} alt="siod logo"  />         
+                <img src={cover} alt="logo" width="280" height="280"  />
             </div>
-
 
             <div className={style.player}>
                 <div className={style.trackTitle}>
-                    <span>{ artist }</span>    
+                    <span className={style.artist}>
+                        <Link to={artistLinkDiscogs} target="_blank">{artist}</Link>
+                    </span>
                     <span>{ trackTitle }</span>
-                    <span>{`${durationMin} : ${durationSec}`}</span>
                 </div>
                 <div className={style.trackControls}>
                     <audio
@@ -57,6 +70,22 @@ export default function Player(props) {
                     </audio>
 
                     <div className={style.playerControls}>
+                    <span className={style.playerTimer}>
+                        {
+                            `${
+                                 Math.floor(minutes) < 10 ? 
+                                '0' +  Math.floor(minutes) :
+                                 Math.floor(minutes) 
+                            }
+                            : ${
+                                Math.floor(seconds) < 10 ? 
+                                '0' + Math.floor(seconds) :
+                                Math.floor(seconds)
+                            }`
+                        }
+                    </span>
+
+                    <div className={style.playerControlButton}>
                         <button className={style.controlButton} onClick={playPause}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="20" height="20">
                                 {
@@ -71,14 +100,25 @@ export default function Player(props) {
                                 <rect width="30" height="30" rx="5" ry="5"/>
                             </svg>
                         </button>
-
+                    </div>
+                    <span className={style.playerTimer}>
+                        {
+                            `-${
+                                Math.floor(durationMinutes) < 10 ? 
+                                '0' + Math.floor(durationMinutes): 
+                                Math.floor(durationMinutes)} 
+                                : 
+                                ${durationSeconds < 10 ? '0' + durationSeconds: durationSeconds}
+                            `
+                        }
+                    </span>
                     </div>
                     <input
                         type="range"
                         min="0"
                         max="100"
                         step="1"
-                        value={seekValue}
+                        value={Math.floor(seekValue)}
                         onChange={(e) => {
                         
                             const seekto = audioPlayer.current.duration * (+e.target.value / 100);

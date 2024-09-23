@@ -1,11 +1,12 @@
 .content {
-    background-color: var(--system);
     padding-left: 20px;
     padding-right: 20px;
 }
 
 
-.wrapper {
+.wrapper,
+.wrapperUnreleased,
+.wrapperReleased {
     position: relative;
 
     display: grid;
@@ -13,16 +14,35 @@
             "cover cover cover"
             "player player player";
     grid-template-columns: 1fr 1fr 1fr;
-
     row-gap: 10px;
-
     justify-items: center; 
-    width: 280px;
 
+    padding: 10px;
+    width: 300px;
 
-    background-color: var(--system);
-    overflow: hidden;
     border-radius: 10px;
+    background-color: var(--prymari-opacity1);
+
+    overflow: hidden;
+}
+
+.wrapperUnreleased::before,
+.wrapperReleased::before{
+    opacity: 1;
+    content: 'Unreleased';
+    position: absolute;
+    background-color: var(--git);
+    color: var(--js);
+    padding: 4px;
+    right: 0;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.wrapperReleased::before {
+    content: 'Released';
+    background-color: var(--js);
+    color: var(--prymari-dark);
 }
 
 .grid {
@@ -39,11 +59,13 @@
 .cover {
     width: 280px;
     height: 280px;
-    border-radius: 50%;
+    border-radius: 10px;
     grid-column: 1 / -1;
     grid-area: cover;
+    border-right: 10px;
+    overflow: hidden;
 
-    background-color: var(--prymari-dark);
+    /* background-color: var(--prymari-dark); */
 }
 
 
@@ -59,32 +81,58 @@
 
 .trackTitle {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between ;
     align-items: center;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
+    border-bottom: 4px double var(--text-color);
+    padding-bottom: 10px;
+}
+
+.artist a {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.artist a:hover {
+    color: var(--prymari-white);
 }
 
 .player {
     display: grid;
+    row-gap: 10px;
     grid-area: player;
     padding-top: 0;
     width: 100%;
 }
 
-
 .playerControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playerTimer {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+}
+
+.playerTimer:nth-child(3) {
+    text-align: right;
+}
+
+.playerControlButton {
     display: grid;
-    column-gap: 10px;
-    justify-content: center;
-    grid-template-columns: min-content min-content min-content;
+    grid-template-columns: 1fr 1fr;
 }
 
 .controlButton {
     display: grid;
     justify-items: center;
     align-content: center;
-
     width: 30px;
     height: 30px;
     border: none;
@@ -93,9 +141,15 @@
 }
 
 .controlButton svg {
-    fill: var(--text-color);
+    fill: #3b3b3b;
 }
 
 input[type="range"] {
     accent-color: var(--prymari-dark);
+}
+
+@media(min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
 }
