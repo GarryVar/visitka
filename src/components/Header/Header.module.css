@@ -1,6 +1,12 @@
 .header {
+  position: sticky;
+  top: 0;
+
   grid-area: header;
+  backdrop-filter: blur(5px);
   background: transparent;
+  z-index: 990;
+  box-shadow: 0 1px 0 var(--prymari-white);
 }
 
 .headerLayout {

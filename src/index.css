@@ -78,6 +78,7 @@ body {
     background-position-y: 30%, 72%, 5%, 100%;
     background-size: 80%, 80%, 60%, 100%;
     background-position-x: 115%, -26%, -10%, 100%;
+    background-attachment: fixed;
 }
 
 h1,
