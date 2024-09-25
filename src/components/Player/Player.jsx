@@ -13,18 +13,10 @@ export default function Player(props) {
         durationSec, 
         artistLinkDiscogs, 
         released,
-        likes
     } = props.track;
 
 
     const audioPlayer = useRef();
-
-    const [like, setLike] = useState(likes);
-
-    const getLike = () => {
-        setLike(like + 1);
-        props.addLike(like);
-    } 
 
     const [triger, setTriger] = useState(false);
     const [currentTime, setCurrentTime] = useState(0);
@@ -68,13 +60,7 @@ export default function Player(props) {
 
     return (
         <div className={ released ? (style.wrapper, style.wrapperReleased) : style.wrapperUnreleased }>
-            <div className={style.likeBar}>
-                <button
-                    onClick={ getLike}
-                    className={like >= 1 ? style.likedBtn : style.likeBtn}>Лайкнуть</button>
-                <span className={style.likeCount}>{ like }</span>
-            </div>
-
+           
             <div className={style.cover}>
                 <img src={ cover } alt="logo" width="280" height="280"  />
             </div>

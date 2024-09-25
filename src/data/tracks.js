@@ -6,10 +6,6 @@ import jyotish1000Little from "../sounds/jyotish_1000_little_indians.mp3";
 import jyotishLogo from "../images/jyotish_logo.webp";
 
 
-export const addLike = (like) => {
-  return like;
-}
-
 export const tracks = [
   {
     track: siodOmLotus,
@@ -20,7 +16,6 @@ export const tracks = [
     cover: siodLogo,
     artistLinkDiscogs: 'https://www.discogs.com/ru/artist/3376567-SIOD',
     released: false,
-    likes: 0
   },
 
   {
@@ -32,7 +27,6 @@ export const tracks = [
     cover: shankeyInfinityCover,
     artistLinkDiscogs: 'https://www.discogs.com/ru/artist/6471962-Shankey',
     released: true,
-    likes: 0,
   },
   {
     track: jyotish1000Little,
@@ -43,6 +37,5 @@ export const tracks = [
     cover: jyotishLogo,
     artistLinkDiscogs: 'https://www.discogs.com/ru/artist/2001307-Jyotish',
     released: true,
-    likes: 0,
   },
 ];
