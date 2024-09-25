@@ -64,7 +64,6 @@ export default class Layout extends Component {
     
     render() {
         return (
-            
             <HashRouter>
                 <div className={style.layout}>
                 
