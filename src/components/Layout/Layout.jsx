@@ -41,16 +41,14 @@ export default class Layout extends Component {
     };
 
     onShowNormalPictures () {
-        // debugger;
         let normalPictures = this.props.pictures.filter(i => i.wide === true);
         this.setState(state => ({pictures: normalPictures}))
     };
     
     onShowNavMenu (e) {
-
         let btn = e.currentTarget;
         if (btn.localName === 'button') {
-            this.setState(state => ({menuVisible: !state.menuVisible}))
+            this.setState(state => ({ menuVisible: !state.menuVisible }))
         }
     };
 
