@@ -90,7 +90,7 @@ export default class Layout extends Component {
                             <Route
                                 path="/music"
                                 element={
-                                            <Music 
+                                            <Music
                                                 tracks={this.props.tracks}
                                             />
                                         }>
@@ -110,7 +110,7 @@ export default class Layout extends Component {
                             </Route>
 
                             <Route
-                                path="/:key"
+                                path="/graphics/details/:key"
                                 element={
                                     <PictureDetail
                                         getDetail={this.getDetail}

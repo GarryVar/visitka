@@ -4,7 +4,7 @@ import Layout from './components/Layout/Layout.jsx'
 import './index.css';
 import 'animate.css';
 import { pictures } from './data/pictures.js';
-import { tracks } from './data/tracks.js';
+import { tracks,  addLike } from './data/tracks.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,8 +12,9 @@ root.render(
     <React.StrictMode>
 
         <Layout
-            pictures={pictures}
-            tracks={tracks} 
+            addLike={ addLike }
+            pictures={ pictures }
+            tracks={ tracks } 
         />
 
     </React.StrictMode>

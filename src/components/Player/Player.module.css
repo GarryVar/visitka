@@ -39,6 +39,25 @@
     color: var(--prymari-dark);
 }
 
+.likeBar {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.likedBtn {
+  background-color: green;
+}
+
+.likeBtn {
+  padding: 0;
+  background-color: red;
+}
+
 .cover {
   width: 280px;
   height: 280px;

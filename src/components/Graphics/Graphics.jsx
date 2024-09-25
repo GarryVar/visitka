@@ -15,7 +15,6 @@ import {Link} from "react-router-dom";
                         <div className={style.filtersGroup}>
 
                             <button onClick={onShowAllPictures}>all</button>
-
                             <button onClick={onShowWidePictures} title={"Горизонтальные"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" width="40" height="40">
                                         <path style={{fill:"var(--text-color)"}} d="M2.5 7.5h35v25h-35z"/>
@@ -45,7 +44,7 @@ import {Link} from "react-router-dom";
 
                                 <Link
                                         key={key}
-                                        to={`/${key}`}
+                                        to={`/graphics/details/${key}`}
                                         className={`${style.link}`}>
                                         <img src={thumb} alt="" width={thumbWidth} height={thumbHeight}/>
                                         <span>{title}</span>

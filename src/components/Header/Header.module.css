@@ -92,8 +92,8 @@
     width: 280px;
     height: 100%;
     background: url(../../images/stars-set-1.svg), 
-              url(../../images/stars-set-2.svg), 
-              url(../../images/ufo-ship.svg);
+                url(../../images/stars-set-2.svg), 
+                url(../../images/ufo-ship.svg);
     background-repeat: no-repeat;
     background-position-y: 0, 100%, 100%;
     background-size: 80%, 60%, 60%;
