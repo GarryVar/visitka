@@ -53,6 +53,11 @@
 }
 
 @media(min-width: 620px) {
+  .page {
+    margin: auto;
+    max-width: 540px;
+  }
+
   .picture {
     width: 280px;
     height: min-content;

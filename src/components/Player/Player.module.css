@@ -12,8 +12,6 @@
     justify-items: center; 
 
     padding: 10px;
-    width: 300px;
-
     border-radius: 10px;
     background-color: var(--prymari-opacity1);
 
@@ -59,8 +57,6 @@
 }
 
 .cover {
-  width: 280px;
-  height: 280px;
   border-radius: 10px;
   grid-column: 1 / -1;
   grid-area: cover;
@@ -77,6 +73,7 @@
   grid-column: 1/ -1;
   border-radius: 5px;
   padding: 3px;
+  font-size: 12px;
 }
 
 .trackTitle {
@@ -84,7 +81,8 @@
   justify-content: space-between ;
   align-items: center;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
+
   border-bottom: 4px double var(--text-color);
   padding-bottom: 10px;
 }
@@ -116,7 +114,6 @@
 
 .playerTimer {
   width: 100%;
-  font-size: 16px;
   text-align: left;
 }
 
@@ -146,4 +143,12 @@
 
 input[type="range"] {
   accent-color: var(--prymari-dark);
+}
+
+@media(min-width: 620px) {
+  .wrapper,
+  .wrapperUnreleased,
+  .wrapperReleased {
+    width: 280px;
+  }
 }

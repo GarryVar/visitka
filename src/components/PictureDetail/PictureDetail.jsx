@@ -7,11 +7,10 @@ const PictureDetail = (props) => {
   const {key} = useParams();
 
   const details = props.getDetail(key);
-  const { title} = details;
+  const { title } = details;
 
   return (  
-        <div className="content animate__animated animate__fadeIn">
-
+        <div className="container">
           <div className="title">
              <h1 className="animate__animated animate__headShake">{title}</h1>
           </div>

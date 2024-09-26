@@ -1,7 +1,6 @@
 .wrapper {
     display: grid;
     row-gap: 20px;
-    margin: 20px;
 }
 
 .filters {
@@ -41,7 +40,6 @@
     justify-items: center;
     font-size: 14px;
     color: var(--text-color);
-    padding: 6px 6px 8px;
 }
 
 

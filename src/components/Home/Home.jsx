@@ -4,7 +4,7 @@ import style from "./Home.module.css";
 export default class Home extends Component {
     render () {
         return (
-            <div className="content">
+            <div className="container">
                 <div className="title">
                     <h1 className="animate__animated animate__flipInX">Про меня</h1>
                 </div>

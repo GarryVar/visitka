@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
  const Graphics = ({data, onShowWidePictures, onShowNormalPictures, onShowAllPictures}) => {
         return (
 
-            <div className="content">
+            <div className="container">
                 <div className="title">
                     <h1 className="animate__animated animate__flipInX">Графика</h1>
                 </div>

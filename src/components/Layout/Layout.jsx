@@ -72,7 +72,7 @@ export default class Layout extends Component {
                     />
 
                     <main 
-                        className={style.main}
+                        className={`${style.main} animate__animated animate__fadeIn`}
                     >    
                         <Routes>
                             <Route

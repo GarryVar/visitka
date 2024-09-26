@@ -62,7 +62,7 @@ export default function Player(props) {
         <div className={ released ? (style.wrapper, style.wrapperReleased) : style.wrapperUnreleased }>
            
             <div className={style.cover}>
-                <img src={ cover } alt="logo" width="280" height="280"  />
+                <img src={ cover } alt="logo" width="180" height="180"  />
             </div>
 
             <div className={style.player}>
