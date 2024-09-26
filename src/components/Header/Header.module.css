@@ -89,7 +89,7 @@
   .header {
     border-bottom: none;
     position: fixed;
-    width: 280px;
+    width: 300px;
     height: 100%;
     background: url(../../images/stars-set-1.svg), 
                 url(../../images/stars-set-2.svg), 

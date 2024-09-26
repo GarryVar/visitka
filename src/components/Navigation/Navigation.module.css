@@ -20,7 +20,6 @@
     position: relative;
 
     display: flex;
-    align-items: center;
     outline: none;
     width: fit-content;
 }
@@ -29,19 +28,38 @@
     border-bottom: none;
 }
 
+.item:hover .icon svg {
+    fill: var(--text-color);
+}
+
+.icon {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.icon svg {
+    fill: var(--prymari-white);
+}
+
+.icon:active .icon svg {
+    fiil: var(--git);
+}
+
 
 .link {
-    text-transform: uppercase;
     position: relative;
     display: flex;
 
-    padding: calc(var(--gap) / 2);
-    padding-left: 30px;
     width: 100%;
-    color: var(--prymari-white);
-    font-size: 12px;
-    letter-spacing: 1px;
+    padding: 0 25px 25px 15px;
 
+    color: var(--prymari-white);
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
@@ -55,8 +73,12 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
-    padding-left: 70px;
+    padding-left: 40px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+}
+
+.link:active {
+    color: var(--git);
 }
 
 @media (min-width: 620px) {
@@ -76,21 +98,33 @@
 
     .navHidden {
         display: block;
+        padding: 20px;
     }
 
     .item {
+        flex-wrap: wrap;
+        justify-content: center;
         padding: 0;
     }
 
     .link {
         padding: 5px;
         justify-content: start;
+
+        font-size: 10px;
     }
 
     .link:hover {
         padding-left: 5px;
     }
 
+}
+
+
+@media(min-width: 768px) {
+    .link {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 920px) {
@@ -103,15 +137,19 @@
         flex-direction: column;
     }
 
+    .item {
+        flex-wrap: nowrap;
+        align-content: end;
+    }
+
     .link {
         color: var(--prymari-white);
         padding: calc(var(--gap) / 2);
-        padding-left: 30px;
         width: 100%;
         font-size: 18px;
     }
 
     .link:hover {
-        padding-left: 70px;
+        padding-left: 40px;
     }
 }

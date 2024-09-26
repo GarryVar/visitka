@@ -137,8 +137,9 @@ figure {
 
 .active {
   position: relative;
-  padding-left: 70px;
+  padding-left: 40px;
   color: var(--git);
+
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
@@ -265,7 +266,7 @@ code {
   }
 
   .active {
-    padding-left: 70px;
+    padding-left: 40px;
   }
 }
 
