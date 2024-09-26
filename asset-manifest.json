@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.c623fc62.css",
-    "main.js": "./static/js/main.7487effe.js",
+    "main.css": "./static/css/main.02a76cae.css",
+    "main.js": "./static/js/main.9a7e16da.js",
     "static/media/shankey_infinity_in_infinity.mp3": "./static/media/shankey_infinity_in_infinity.a7a05bfba680fde28969.mp3",
     "static/media/jyotish_1000_little_indians.mp3": "./static/media/jyotish_1000_little_indians.0ea3f86f7e742fb7fcdf.mp3",
     "static/media/siod_om_lotus.mp3": "./static/media/siod_om_lotus.64f39e42dbaca24fe28d.mp3",
@@ -31,15 +31,15 @@
     "static/media/stars-set-2.svg": "./static/media/stars-set-2.2b711160a0535bdbafb0.svg",
     "static/media/ufo-ship.svg": "./static/media/ufo-ship.9e996a4fec4955b8e8d0.svg",
     "index.html": "./index.html",
-    "static/media/icon-user.svg": "./static/media/icon-user.5063608d84e9dd32b7ae02b85e1cf95e.svg",
-    "static/media/icon-code.svg": "./static/media/icon-code.7a0e1c0ae63c14092ffb819d52d3a20f.svg",
-    "static/media/icon-images.svg": "./static/media/icon-images.4b46ed6b053c7e8b03e9937d88c1c653.svg",
-    "static/media/icon-music.svg": "./static/media/icon-music.e4c8ba5acce46b5da847cce0a916430b.svg",
-    "main.c623fc62.css.map": "./static/css/main.c623fc62.css.map",
-    "main.7487effe.js.map": "./static/js/main.7487effe.js.map"
+    "static/media/icon-user.svg": "./static/media/icon-user.0e8bc97c7f3f64e882b6d50bb6c5ed65.svg",
+    "static/media/icon-code.svg": "./static/media/icon-code.bc975910327471687a19a759ed02f89d.svg",
+    "static/media/icon-images.svg": "./static/media/icon-images.ddf9fce45acea871e3edcd482db589a3.svg",
+    "static/media/icon-music.svg": "./static/media/icon-music.6e7e7e343fba7b25dbd550c89812d469.svg",
+    "main.02a76cae.css.map": "./static/css/main.02a76cae.css.map",
+    "main.9a7e16da.js.map": "./static/js/main.9a7e16da.js.map"
   },
   "entrypoints": [
-    "static/css/main.c623fc62.css",
-    "static/js/main.7487effe.js"
+    "static/css/main.02a76cae.css",
+    "static/js/main.9a7e16da.js"
   ]
 }
