@@ -47,6 +47,11 @@
     --text-color: #211c1c;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 *,
 ::before,
 ::after {
@@ -78,6 +83,7 @@ body {
     background-position-y: 30%, 72%, 5%, 100%;
     background-size: 80%, 80%, 60%, 100%;
     background-position-x: 115%, -26%, -10%, 100%;
+    background-attachment: fixed;
 }
 
 h1,
@@ -124,6 +130,11 @@ figure {
   height: 100%;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .active {
   position: relative;
   padding-left: 70px;
@@ -141,11 +152,6 @@ figure {
 
   box-shadow: 15px 13px black;
 }
-
-.cotent {
-  height: 100%;
-}
-
 
 .sticky {
   position: sticky;
@@ -220,20 +226,18 @@ code {
     background-position-y: 10%, 117%, 23%, 100%;
     background-size: 25%, 40%, 30%, 100%;
   }
-  .container {
-    grid-template-columns: min-content auto;
-  }
 
   .title h1 {
     font-size: 35px;
   }
+
 
   .subtitle  {
     font-size: 16px;
   }
 
   .active {
-    padding: 10px;
+    padding: 5px;
   }
 }
 
@@ -244,9 +248,11 @@ code {
     background-size: 27%, 26%, 20%, 100%;
   }
 
-  .content {
+  .container {
     margin: auto;
-    max-width: 920px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 90%;
   }
 
   .subtitle {

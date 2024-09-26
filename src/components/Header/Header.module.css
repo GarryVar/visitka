@@ -1,6 +1,12 @@
 .header {
+  position: sticky;
+  top: 0;
+
   grid-area: header;
+  backdrop-filter: blur(5px);
   background: transparent;
+  z-index: 990;
+  box-shadow: 0 1px 0 var(--prymari-white);
 }
 
 .headerLayout {
@@ -86,12 +92,13 @@
     width: 280px;
     height: 100%;
     background: url(../../images/stars-set-1.svg), 
-              url(../../images/stars-set-2.svg), 
-              url(../../images/ufo-ship.svg);
+                url(../../images/stars-set-2.svg), 
+                url(../../images/ufo-ship.svg);
     background-repeat: no-repeat;
     background-position-y: 0, 100%, 100%;
     background-size: 80%, 60%, 60%;
     background-position-x: 130%, 10%, 100%;
+    backdrop-filter: none;
 }
 
 

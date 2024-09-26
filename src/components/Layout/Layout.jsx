@@ -42,16 +42,14 @@ export default class Layout extends Component {
     };
 
     onShowNormalPictures () {
-        // debugger;
         let normalPictures = this.props.pictures.filter(i => i.wide === true);
         this.setState(state => ({pictures: normalPictures}))
     };
     
     onShowNavMenu (e) {
-
         let btn = e.currentTarget;
         if (btn.localName === 'button') {
-            this.setState(state => ({menuVisible: !state.menuVisible}))
+            this.setState(state => ({ menuVisible: !state.menuVisible }))
         }
     };
 
@@ -65,7 +63,6 @@ export default class Layout extends Component {
     
     render() {
         return (
-            
             <HashRouter>
                 <div className={style.layout}>
                 
@@ -77,7 +74,7 @@ export default class Layout extends Component {
                     />
 
                     <main 
-                        className={style.main}
+                        className={`${style.main} animate__animated animate__fadeIn`}
                     >    
                         <Routes>
                             <Route
@@ -93,7 +90,7 @@ export default class Layout extends Component {
                             <Route
                                 path="/music"
                                 element={
-                                            <Music 
+                                            <Music
                                                 tracks={this.props.tracks}
                                             />
                                         }>
@@ -113,7 +110,7 @@ export default class Layout extends Component {
                             </Route>
 
                             <Route
-                                path="/:key"
+                                path="/graphics/details/:key"
                                 element={
                                     <PictureDetail
                                         getDetail={this.getDetail}

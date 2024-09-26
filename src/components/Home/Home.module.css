@@ -1,12 +1,12 @@
-.content {
+.contentWrapper {
   padding: 10px;
 }
 
-.content ol {
+.contentWrapper ol {
   padding: 0;
 }
 
-.content ol li {
+.contentWrapper ol li {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -68,7 +68,7 @@
 }
 
 @media (min-width: 620px) {
-  .content {
+  .contentWrapper {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -89,20 +89,25 @@
 }
 
 @media (min-width: 920px) {
-  .content {
+  .contentWrapper {
     margin: auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .content {
+  .contentWrapper {
     display: grid;
     gap: 20px;
-    grid-template-columns: 22rem 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .title {
+    grid-column: 1 / 2;
     font-size: 50px;
+  }
+
+  .textLong {
+    grid-column: 1 / 3;
   }
 
   .jsModifer {
@@ -111,13 +116,13 @@
 }
 
 @media (min-width: 1200px) {
-    .content {
+    .contentWrapper {
       max-width: 1200px;
     }
 }
 
 @media (min-width: 1300px) {
-  .content {
+  .contentWrapper {
     max-width: 1024px;
   }
 }

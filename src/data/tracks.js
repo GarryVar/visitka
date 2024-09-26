@@ -5,6 +5,7 @@ import shankeyInfinityCover from "../images/shankty_infinity.webp"
 import jyotish1000Little from "../sounds/jyotish_1000_little_indians.mp3";
 import jyotishLogo from "../images/jyotish_logo.webp";
 
+
 export const tracks = [
   {
     track: siodOmLotus,
