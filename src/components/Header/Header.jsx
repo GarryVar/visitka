@@ -11,12 +11,14 @@ export default class Header extends Component {
       <header
        className={style.header}>
       <div className={style.headerLayout}>
+
           <div className={style.headerTopBar}>
             <Link to="/">
               <span className={style.logo}>Визиткa</span>
               {/* <img src="../../public/images/visitka-logo.svg" alt="My avatar sorry..."  width="100" height="100"/> */}
             </Link>
           </div>
+
             <Navigation
                 menuItemsData={this.props.menuItemsData}
               hideNavMenu={this.props.hideNavMenu}

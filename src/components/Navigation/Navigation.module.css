@@ -16,6 +16,38 @@
     border-radius: 20px;
 }
 
+.myWebList {
+    margin-top: 20px;
+    display: flex;
+    padding: 10px 0;
+
+    border-radius: 10px;
+}
+
+.myWebList li {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.myWebList li:hover {
+    background-color: var(--prymari-dark);
+}
+
+.myWebList .icon {
+    fill: var(--text-color);
+}
+
+.myWebList a {
+    font-size: 12px;
+    font-family: "IBM Plex Mono";
+    color: var(--prymari-white);
+}
+
 .item {
     position: relative;
 
@@ -36,8 +68,8 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .icon svg {
@@ -45,15 +77,14 @@
 }
 
 .icon:active .icon svg {
-    fiil: var(--git);
+    fill: var(--git);
 }
 
 
 .link {
     position: relative;
-    display: flex;
+    display: block;
 
-    width: 100%;
     padding: 0 25px 25px 15px;
 
     color: var(--prymari-white);
@@ -89,6 +120,10 @@
         justify-content: space-around;
     }
 
+    .myWebList {
+        border: none;
+    }
+
     .nav {
         display: block;
         grid-column: 2 / -1;
@@ -102,7 +137,8 @@
     }
 
     .item {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         padding: 0;
     }
@@ -131,15 +167,29 @@
     .nav {
         grid-column: 1 / -1;
         grid-row: 2;
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .navHidden {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
     .menu {
         flex-direction: column;
     }
 
+    .myWebList {
+        margin-top: auto;
+    }
+
     .item {
-        flex-wrap: nowrap;
-        align-content: end;
+        flex-direction: row;
+        align-items: center;
     }
 
     .link {
