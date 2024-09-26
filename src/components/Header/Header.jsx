@@ -2,6 +2,7 @@ import { Component } from "react";
 import style from './Header.module.css';
 import Navigation from '../Navigation/Navigation';
 import { Link } from "react-router-dom";
+import {menuItemsData} from "../../data/menuItems";
 
 export default class Header extends Component {
 
@@ -17,6 +18,7 @@ export default class Header extends Component {
             </Link>
           </div>
             <Navigation
+                menuItemsData={this.props.menuItemsData}
               hideNavMenu={this.props.hideNavMenu}
               menuVisible={this.props.menuVisible} />
 

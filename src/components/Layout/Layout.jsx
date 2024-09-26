@@ -7,6 +7,7 @@ import Music from '../Music/Music'
 import Graphics from '../Graphics/Graphics';
 import Header from './../Header/Header';
 import PictureDetail from '../PictureDetail/PictureDetail';
+import {menuItemsData} from "../../data/menuItems";
 
 
 export default class Layout extends Component {
@@ -69,6 +70,7 @@ export default class Layout extends Component {
                 <div className={style.layout}>
                 
                     <Header
+                        menuItemsData={this.props.menuItemsData}
                         hideNavMenu={this.hideNavMenu}
                         menuVisible={this.state.menuVisible}
                         onShowNavMenu={this.onShowNavMenu}
