@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Component } from "react";
 import style from "./Layout.module.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
@@ -8,20 +7,6 @@ import Music from "../Music/Music";
 import Graphics from "../Graphics/Graphics";
 import Header from "./../Header/Header";
 import PictureDetail from "../PictureDetail/PictureDetail";
-import stars from "../../images/stars-set-2.svg";
-=======
-import {Component} from 'react';
-import style from './Layout.module.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import Development from './../Development/Development';
-import Home from '../Home/Home';
-import Music from '../Music/Music'    
-import Graphics from '../Graphics/Graphics';
-import Header from './../Header/Header';
-import PictureDetail from '../PictureDetail/PictureDetail';
-import {menuItemsData} from "../../data/menuItems";
-
->>>>>>> cf931512eb27065fc0cb7965da9b959e564d76b7
 
 export default class Layout extends Component {
   constructor(props) {
@@ -80,39 +65,20 @@ export default class Layout extends Component {
       <HashRouter>
         <div className={style.layout}>
           <Header
+            menuItemsData={this.props.menuItemsData}
             hideNavMenu={this.hideNavMenu}
             menuVisible={this.state.menuVisible}
             onShowNavMenu={this.onShowNavMenu}
           />
 
           <main className={`${style.main} animate__animated animate__fadeIn`}>
-            <img src={stars} alt="Звёзды"></img>
             <Routes>
               <Route path="/" element={<Home />}></Route>
 
               <Route path="/dev" element={<Development />}></Route>
-
-<<<<<<< HEAD
               <Route
                 path="/music"
                 element={<Music tracks={this.props.tracks} />}></Route>
-=======
-    getDetail (key) {
-        return this.state.pictures.find(i => i.key === key);
-    };
-    
-    render() {
-        return (
-            <HashRouter>
-                <div className={style.layout}>
-                
-                    <Header
-                        menuItemsData={this.props.menuItemsData}
-                        hideNavMenu={this.hideNavMenu}
-                        menuVisible={this.state.menuVisible}
-                        onShowNavMenu={this.onShowNavMenu}
-                    />
->>>>>>> cf931512eb27065fc0cb7965da9b959e564d76b7
 
               <Route
                 path="/graphics"
