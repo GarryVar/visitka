@@ -3,7 +3,9 @@ import style from "../Player/Player.module.css";
 import { Link } from "react-router-dom";
 
 
+
 export default function Player(props) {
+
     const {
         track, 
         artist, 
@@ -88,7 +90,8 @@ export default function Player(props) {
                     <span className={style.playerTimer}>
                         {
                             `${
-                                 Math.floor(minutes) < 10 ? 
+            
+                                Math.floor(minutes) < 10 ? 
                                 '0' +  Math.floor(minutes) :
                                  Math.floor(minutes) 
                             }
