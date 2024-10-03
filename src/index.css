@@ -132,8 +132,9 @@ figure {
 
 .active {
   position: relative;
-  padding-left: 70px;
+  padding-left: 40px;
   color: var(--git);
+
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
@@ -228,10 +229,6 @@ code {
   .subtitle {
     font-size: 16px;
   }
-
-  .active {
-    padding: 5px;
-  }
 }
 
 @media (min-width: 920px) {
@@ -258,15 +255,14 @@ code {
   }
 
   .active {
-    padding-left: 70px;
+    padding-left: 40px;
   }
 }
 
 @media (min-width: 1024px) {
   .container-wrapper {
     width: 1024px;
-    margin: auto;
-    margin-top: 60px;
+    margin: 60px auto auto;
     border: 4px double var(--border-prymari);
     background-color: var(--prymari-dark);
     border-radius: 10px;
