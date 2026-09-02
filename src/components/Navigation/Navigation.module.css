@@ -131,11 +131,6 @@
         border-top: none;
     }
 
-    .navHidden {
-       /* display: block;*/
-        padding: 20px;
-    }
-
     .item {
         flex-direction: column;
         align-items: center;
