@@ -125,14 +125,14 @@
     }
 
     .nav {
-       /* display: block;*/
+        display: block;
         grid-column: 2 / -1;
         grid-row: 1 ;
         border-top: none;
     }
 
     .navHidden {
-        display: block;
+       /* display: block;*/
         padding: 20px;
     }
 
