@@ -125,17 +125,17 @@
     }
 
     .nav {
-        display: block;
+       /* display: block;*/
         grid-column: 2 / -1;
         grid-row: 1 ;
         border-top: none;
     }
 
-   /* .navHidden {
+    .navHidden {
         display: block;
         padding: 20px;
     }
-*/
+
     .item {
         flex-direction: column;
         align-items: center;
