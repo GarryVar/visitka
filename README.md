@@ -1,110 +1,47 @@
-# 💼 Визитка Игоря — веб‑разработчик
+# 💼 Igor’s Portfolio — Web Developer
 
-Привет! 👋  
-Я Игорь. Несколько лет назад мир веб‑разработки полностью меня захватил — и с тех пор я постоянно учусь и пробую новое.
+Hi there! 👋  
+I’m Igor. A few years ago, the world of web development completely captivated me — and since then, I’ve been constantly learning and trying new things.
 
-## 📚 Путь в разработке
+## 📚 My Development Journey
 
-Всё началось в 2020 году: случайно наткнулся на бесплатные тренажёры HTML Academy и просидел за ними полночи. Это стало точкой отсчёта. Вскоре я стал студентом академии, где одним из лекторов был известный Вадим Макеев.
+It all started in 2020: I stumbled upon HTML Academy’s free practice tools and spent a whole night working through them. That was my starting point. Soon after, I became a student at the academy, where one of my instructors was the well‑known Vadim Makeev.
 
-**Пройденные курсы:**
-- Март 2020 — «HTML и CSS. Уровень 1» (#27).
-- Сентябрь 2020 — «HTML и CSS. Адаптивная вёрстка и автоматизация».
-- Июль — «JavaScript. Профессиональная разработка веб‑интерфейсов».
-
----
-
-## 🎨 Чем занимаюсь
-
-Это моя цифровая визитка — здесь собраны мои навыки, интересы и текущие проекты. Проект реализован как React‑приложение (на базе Create React App) и находится в активной разработке: планирую дополнять его по мере освоения новых возможностей фреймворка.
-
-Помимо написания кода, увлекаюсь:
-- дизайном логотипов;
-- созданием иллюстраций и SVG‑иконок (рисую сам);
-- написанием музыки.
+**Completed Courses:**
+- March 2020 — “HTML and CSS. Level 1” (#27).
+- September 2020 — “HTML and CSS. Responsive Layout and Automation”.
+- July — “JavaScript. Professional Web Interface Development”.
 
 ---
 
-## 💻 Навыки
+## 🎨 What I Do
 
-### CSS
+This is my digital portfolio — a place where I showcase my skills, interests, and current projects. The project is built as a React app (based on Create React App) and is still under active development. I plan to keep adding new features as I learn more about the framework.
 
-- **Flexbox** — создание гибких макетов, работа со свойствами `display: flex`, `flex-direction`, `flex-grow` и др.
-- **CSS Grid** — мощные сеточные макеты: `grid-template-areas`, `grid-row`, `grid-column`.
-- **BEM** — строгое следование методологии: `.block`, `.block__elem`, `.block--modifier`, `.block__elem--modifier`.
-- **Mobile First** — вёрстка начинается с мобильных устройств, далее адаптив под планшеты и десктопы:
-  ```css
-  @media (min-width: 320px) { /* mobile */ }
-  @media (min-width: 768px) { /* tablet */ }
-  @media (min-width: 1200px) { /* desktop */ }
+Besides coding, I’m passionate about:
+- designing logos;
+- creating illustrations and SVG icons (I draw them myself);
+- writing music.
 
-
-markdown
-# 💼 Визитка Игоря — веб‑разработчик
-
-Привет! 👋  
-Я Игорь. Несколько лет назад мир веб‑разработки полностью меня захватил — и с тех пор я постоянно учусь и пробую новое.
-
-## 📚 Путь в разработке
-
-Всё началось в 2020 году: случайно наткнулся на бесплатные тренажёры HTML Academy и просидел за ними полночи. Это стало точкой отсчёта. Вскоре я стал студентом академии, где одним из лекторов был известный Вадим Макеев.
-
-**Пройденные курсы:**
-- Март 2020 — «HTML и CSS. Уровень 1» (#27).
-- Сентябрь 2020 — «HTML и CSS. Адаптивная вёрстка и автоматизация».
-- Июль — «JavaScript. Профессиональная разработка веб‑интерфейсов».
-
----
-
-## 🎨 Чем занимаюсь
-
-Это моя цифровая визитка — здесь собраны мои навыки, интересы и текущие проекты. Проект реализован как React‑приложение (на базе Create React App) и находится в активной разработке: планирую дополнять его по мере освоения новых возможностей фреймворка.
-
-Помимо написания кода, увлекаюсь:
-- дизайном логотипов;
-- созданием иллюстраций и SVG‑иконок (рисую сам);
-- написанием музыки.
-
----
-
-## 💻 Навыки
-
-### CSS
-
-- **Flexbox** — создание гибких макетов, работа со свойствами `display: flex`, `flex-direction`, `flex-grow` и др.
-- **CSS Grid** — мощные сеточные макеты: `grid-template-areas`, `grid-row`, `grid-column`.
-- **BEM** — строгое следование методологии: `.block`, `.block__elem`, `.block--modifier`, `.block__elem--modifier`.
-- **Mobile First** — вёрстка начинается с мобильных устройств, далее адаптив под планшеты и десктопы:
-  ```css
-  @media (min-width: 320px) { /* mobile */ }
-  @media (min-width: 768px) { /* tablet */ }
-  @media (min-width: 1200px) { /* desktop */ }
-Современные возможности CSS — активно изучаю новые свойства и селекторы: @container, :is(), :where(), работа с цветами через hsl() и прозрачностью.
-Кроссбраузерность — учитываю особенности движков: Blink (Chrome), WebKit (Safari), Gecko (Firefox).
-Препроцессоры — знаком с Sass и Less, использую при необходимости для ускорения работы.
-Библиотеки стилей — имею опыт работы с Bulma и аналогичными решениями.
-JavaScript
-DOM‑манипуляции — getElementById, querySelectorAll, работа с classList и другими методами для изменения структуры и стилей страницы.
-Работа с событиями — использование addEventListener, обработка объекта события (evt.currentTarget и т. д.).
-Инструменты разработчика — активное использование DevTools, команды debugger для пошаговой отладки.
-Основы языка — функции (объявления и выражения), замыкания, области видимости, коллбэки, чистые функции.
-Условные конструкции и циклы — if/else, switch, тернарный оператор, логические операторы &&, ||, циклы for и другие.
-Массивы и объекты — методы массивов (forEach, map, filter, push, slice, shift), работа с объектами, классы и наследование.
-ES6+ — модули, деструктуризация, стрелочные функции, ключевые слова const и let.
-Node.js и npm
-Работа с пакетным менеджером npm: установка, обновление и удаление модулей.
-Использование npx для запуска инструментов, например npx create-react-app.
-Настройка и поддержка проекта через package.json.
-Git и GitHub
-Владение основными консольными командами:
-bash
-git init
+- git init
 git checkout -b "newBranch"
-git add <путь_к_файлу>
+git add <file_path>
 git commit -m "New commit"
 git push origin main
-Работа с удалёнными и локальными ветками, создание репозиториев на GitHub.
-🚀 Текущий проект
-Visitka — моя персональная визитка на React.
-Это стандартное React‑приложение на базе Create React App, которое я постепенно дорабатываю, внедряя новые подходы и технологии. Проект отражает мой текущий уровень и служит площадкой для экспериментов и обучения.
 
+
+
+### CSS
+
+- **Flexbox** — building flexible layouts, working with properties like `display: flex`, `flex-direction`, `flex-grow`, etc.
+- **CSS Grid** — powerful grid layouts: `grid-template-areas`, `grid-row`, `grid-column`.
+- **BEM** — strict adherence to the methodology: `.block`, `.block__elem`, `.block--modifier`, `.block__elem--modifier`.
+- **Mobile First** — starting layout design for mobile devices, then adapting for tablets and desktops:
+  ```css
+  @media (min-width: 320px) { /* mobile */ }
+  @media (min-width: 768px) { /* tablet */ }
+  @media (min-width: 1200px) { /* desktop */ }
+
+🚀 Current Project
+Visitka — my personal portfolio built with React.
+It’s a standard React app based on Create React App that I’m continuously improving by integrating new approaches and technologies. The project reflects my current skill level and serves as a playground for experimentation and learning.
