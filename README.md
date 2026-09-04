@@ -3,6 +3,9 @@
 Hi there! 👋  
 I’m Igor. A few years ago, the world of web development completely captivated me — and since then, I’ve been constantly learning and trying new things.
 
+[![Live Demo](https://img.shields.io/badge/Demo-Visitka-brightgreen)](https://garryvar.github.io/visitka)
+
+
 ## 📚 My Development Journey
 
 It all started in 2020: I stumbled upon HTML Academy’s free practice tools and spent a whole night working through them. That was my starting point. Soon after, I became a student at the academy, where one of my instructors was the well‑known Vadim Makeev.
