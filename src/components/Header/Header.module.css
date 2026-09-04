@@ -57,24 +57,6 @@
   fill: var(--text-color);
 }
 
-
-@media (min-width: 620px) {
-  .headerLayout {
-      grid-template-columns: auto 1fr;
-  }
-
-  .headerTopBar {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .logo {
-    font-size: 30px;
-    text-align: center;
-  }
-}
-
 @media (min-width: 920px) {
   .header {
     border-bottom: none;
@@ -91,12 +73,15 @@
     backdrop-filter: none;
 }
 
-
 .headerLayout {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     align-items: start;
     height: 100%;
+  }
+
+  .headerBnBurger {
+    display: none;
   }
 }
 

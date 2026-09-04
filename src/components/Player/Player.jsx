@@ -42,9 +42,9 @@ export default function Player(props) {
         setTriger(false);
     };
 
-    const setSpeed = (speed) => {
-        audioPlayer.current.playbackRate = speed;
-    };
+    // const setSpeed = (speed) => {
+    //     audioPlayer.current.playbackRate = speed;
+    // };
 
     const onPlaying = () => {
         let duration = audioPlayer.current.duration;
