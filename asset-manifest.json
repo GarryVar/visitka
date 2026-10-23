@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/visitka/static/css/main.7cc63e74.css",
-    "main.js": "/visitka/static/js/main.87ca1a07.js",
+    "main.css": "/visitka/static/css/main.f58ac328.css",
+    "main.js": "/visitka/static/js/main.5647adc4.js",
     "static/media/shankey_infinity_in_infinity.mp3": "/visitka/static/media/shankey_infinity_in_infinity.a7a05bfba680fde28969.mp3",
     "static/media/jyotish_1000_little_indians.mp3": "/visitka/static/media/jyotish_1000_little_indians.0ea3f86f7e742fb7fcdf.mp3",
     "static/media/siod_om_lotus.mp3": "/visitka/static/media/siod_om_lotus.64f39e42dbaca24fe28d.mp3",
@@ -27,19 +27,19 @@
     "static/media/thumb-tomahawk.webp": "/visitka/static/media/thumb-tomahawk.9748272f3ac8c90538d8.webp",
     "static/media/thumb_ufo_design.webp": "/visitka/static/media/thumb_ufo_design.5fda7d8a60e4fbefb05e.webp",
     "static/media/thumb-pie_cosmo_cake.webp": "/visitka/static/media/thumb-pie_cosmo_cake.0bafa28bc33e34d2a7ca.webp",
-    "static/media/stars-set-1.svg": "/visitka/static/media/stars-set-1.8b0305029227ad6fad9c.svg",
-    "static/media/stars-set-2.svg": "/visitka/static/media/stars-set-2.2b711160a0535bdbafb0.svg",
-    "static/media/ufo-ship.svg": "/visitka/static/media/ufo-ship.9e996a4fec4955b8e8d0.svg",
+    "static/media/stars-set-1.svg": "/visitka/static/media/stars-set-1.bf48aefb6ba926f14997.svg",
+    "static/media/stars-set-2.svg": "/visitka/static/media/stars-set-2.895713b24b984f298571.svg",
+    "static/media/ufo-ship.svg": "/visitka/static/media/ufo-ship.aa0d333f8b809aee0a2f.svg",
     "index.html": "/visitka/index.html",
-    "static/media/icon-user.svg": "/visitka/static/media/icon-user.0e8bc97c7f3f64e882b6d50bb6c5ed65.svg",
-    "static/media/icon-code.svg": "/visitka/static/media/icon-code.bc975910327471687a19a759ed02f89d.svg",
-    "static/media/icon-images.svg": "/visitka/static/media/icon-images.ddf9fce45acea871e3edcd482db589a3.svg",
-    "static/media/icon-music.svg": "/visitka/static/media/icon-music.6e7e7e343fba7b25dbd550c89812d469.svg",
-    "main.7cc63e74.css.map": "/visitka/static/css/main.7cc63e74.css.map",
-    "main.87ca1a07.js.map": "/visitka/static/js/main.87ca1a07.js.map"
+    "static/media/icon-user.svg": "/visitka/static/media/icon-user.3ac0f30090c0131c1b5d6628584062be.svg",
+    "static/media/icon-code.svg": "/visitka/static/media/icon-code.27c8432e207f44a0953c6bce6201b544.svg",
+    "static/media/icon-images.svg": "/visitka/static/media/icon-images.f02dcd06e656df23786b2fa1b6c5c87d.svg",
+    "static/media/icon-music.svg": "/visitka/static/media/icon-music.8cc0c62664372d77c19a3a7db8f42ac8.svg",
+    "main.f58ac328.css.map": "/visitka/static/css/main.f58ac328.css.map",
+    "main.5647adc4.js.map": "/visitka/static/js/main.5647adc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cc63e74.css",
-    "static/js/main.87ca1a07.js"
+    "static/css/main.f58ac328.css",
+    "static/js/main.5647adc4.js"
   ]
 }
